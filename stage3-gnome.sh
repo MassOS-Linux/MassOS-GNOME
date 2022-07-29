@@ -938,7 +938,7 @@ set-gdm-theme set -b /usr/share/gdm/gdm-background.png
 cat >> /usr/share/glib-2.0/schemas/10_gnome-shell.gschema.override << "END"
 [org.gnome.shell]
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Software.desktop']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'ding@rastersoft.com', 'clipboard-indicator@tudmotu.com', 'AlphabeticalAppGrid@stuarthayhurst', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'ding@rastersoft.com', 'clipboard-indicator@tudmotu.com', 'AlphabeticalAppGrid@stuarthayhurst', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com']
 
 [org.gnome.desktop.interface]
 color-scheme='prefer-dark'
