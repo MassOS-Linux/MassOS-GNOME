@@ -913,6 +913,22 @@ install -t /usr/share/licenses/gnome-shell-extension-fuzzy-app-search -Dm644 ext
 ln -sf xfce /usr/share/backgrounds/gnome
 ln -sf MassOS-Futuristic-Dark.png /usr/share/backgrounds/xfce/adwaita-d.jpg
 ln -sf MassOS-Futuristic-Light.png /usr/share/backgrounds/xfce/adwaita-l.jpg
+# Set GNOME Static wallpapers
+install -dm755 /usr/share/gnome-background-properties
+while read -r bg; do
+  cat > /usr/share/gnome-background-properties/"$bg".xml << END
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>$bg</name>
+    <filename>/usr/share/backgrounds/gnome/$bg.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+</wallpapers>
+END
+done <<< $(find /usr/share/backgrounds/xfce -type f -exec basename -a {} + | cut -d. -f1 | sed '/About-Backgrounds/d') 
 # Customise GDM
 cat >> /etc/dconf/profile/gdm << "END"
 user-db:user
