@@ -928,7 +928,7 @@ while read -r bg; do
   </wallpaper>
 </wallpapers>
 END
-done <<< $(find /usr/share/backgrounds/xfce -type f -exec basename -a {} + | cut -d. -f1 | sed '/About-Backgrounds/d') 
+done <<< $(find /usr/share/backgrounds/xfce -type f -exec basename -a {} + | cut -d. -f1 | sed '/About-Backgrounds/d')
 # Customise GDM
 cat >> /etc/dconf/profile/gdm << "END"
 user-db:user
@@ -972,6 +972,9 @@ titlebar-font='Cantarell Bold 11'
 
 [org.gnome.mutter]
 center-new-windows=true
+
+[org.gnome.desktop.peripherals.touchpad]
+tap-to-click=true
 
 [org.gnome.terminal.legacy]
 theme-variant='dark'
