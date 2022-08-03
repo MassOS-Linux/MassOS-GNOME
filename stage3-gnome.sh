@@ -965,6 +965,7 @@ monospace-font-name='Noto Sans Mono Regular 11'
 icon-theme='Adwaita'
 gtk-theme='Adwaita-dark'
 clock-show-weekday=true
+show-battery-percentage=true 
 
 [org.gnome.desktop.wm.preferences]
 button-layout='appmenu:minimize,maximize,close'

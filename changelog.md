@@ -7,6 +7,7 @@ Changes:
 - [GNOME] Enabled a custom shortcut for GNOME Terminal by pressing Control+Alt+T
 - [GNOME] Enabled shortcut Home Folder to Super+E
 - [GNOME] Enabled shortcut Search to Super+R, to mimic the Windows run behaviour 
+- [GNOME] Enabled the show-battery-percentage to show battery percentage on the top bar if a battery is present 
 
 Upgraded software (GNOME):
 
