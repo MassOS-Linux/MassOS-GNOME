@@ -977,33 +977,20 @@ center-new-windows=true
 tap-to-click=true
 
 [gnome.settings-daemon.plugins.media-keys]
-custom-keybindings="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+custom-keybindings="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/'"
+search="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/search']"
 
 [org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/]
 name='Terminal'
-
-[org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/]
 command='gnome-terminal'
-
-[org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/]
 binding='<Control><Alt>t'
-
-[gnome.settings-daemon.plugins.media-keys]
-custom-keybindings="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
 
 [org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/]
 name='Home Folder'
-
-[org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/]
 command='nautilus $HOME'
-
-[org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/]
 binding='<Super>e'
 
-[gnome.settings-daemon.plugins.media-keys]
-search="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/search']"
-
-[org.gnome.settings-daemon.plugins.media-keys.search:/org/gnome/settings-daemon/plugins/media-keys/search/binding/]
+[org.gnome.settings-daemon.plugins.media-keys.search:/org/gnome/settings-daemon/plugins/media-keys/search/]
 binding='<Super>r'
 
 [org.gnome.terminal.legacy]
