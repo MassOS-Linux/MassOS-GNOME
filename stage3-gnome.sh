@@ -976,18 +976,6 @@ center-new-windows=true
 [org.gnome.desktop.peripherals.touchpad]
 tap-to-click=true
 
-[gnome.settings-daemon.plugins.media-keys]
-custom-keybindings="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
-
-[org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/]
-name='Terminal'
-
-[org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/]
-command='gnome-terminal'
-
-[org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/]
-binding='<Ctrl><Alt>t'
-
 [org.gnome.terminal.legacy]
 theme-variant='dark'
 END
