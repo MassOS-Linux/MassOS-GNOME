@@ -977,8 +977,8 @@ center-new-windows=true
 tap-to-click=true
 
 [gnome.settings-daemon.plugins.media-keys]
-custom-keybindings="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/'"
-search="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/search/']"
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+search=['/org/gnome/settings-daemon/plugins/media-keys/search']
 
 [org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/]
 name='Terminal'
@@ -990,7 +990,7 @@ name='Home Folder'
 command='nautilus $HOME'
 binding='<Super>e'
 
-[org.gnome.settings-daemon.plugins.media-keys.search:/org/gnome/settings-daemon/plugins/media-keys/search/]
+[org.gnome.settings-daemon.plugins.media-keys.search:/org/gnome/settings-daemon/plugins/media-keys/search]
 binding='<Super>r'
 
 [org.gnome.terminal.legacy]
