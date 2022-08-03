@@ -986,7 +986,7 @@ name='Terminal'
 command='gnome-terminal'
 
 [org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/]
-binding='<Primary><Alt>t'
+binding='<Control><Alt>t'
 
 [gnome.settings-daemon.plugins.media-keys]
 custom-keybindings="['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
