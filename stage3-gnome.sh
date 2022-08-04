@@ -982,7 +982,7 @@ picture-uri='file:///usr/share/gdm/gdm-background.png'
 default-zoom-level='standard'
 
 [org.gnome.login-screen]
-logo='/usr/share/massos/massos-logo-extrasmall.png'
+logo='/usr/share/massos/massos-logo-sidetext.png'
 
 [org.gnome.terminal.legacy]
 theme-variant='dark'
