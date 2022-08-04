@@ -9,6 +9,7 @@ Changes:
 - [GNOME] Reduced the default size of icons in File Manager.
 - [GNOME] Fixed issues with touchpad clicking.
 - [GNOME] Improved implementation of login screen logo. 
+- [GNOME] Added extension to make favourites apps still appear in app grid. 
 
 Upgraded software (GNOME):
 

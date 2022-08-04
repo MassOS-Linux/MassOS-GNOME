@@ -908,6 +908,10 @@ install -t /usr/share/licenses/gnome-shell-extension-alphabetical-grid-extension
 mkdir /usr/share/gnome-shell/extensions/gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com; unzip gnome-fuzzy-app-searchgnome-shell-extensions.Czarlie.gitlab.com.v16.shell-extension.zip -d /usr/share/gnome-shell/extensions/gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com
 chmod 644 /usr/share/gnome-shell/extensions/gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-fuzzy-app-search -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-fuzzy-app-search.txt
+# gnome-shell-extension-favourites-in-appgrid
+mkdir /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org; unzip favourites-in-appgridharshadgavali.gitlab.org.v2.shell-extension.zip -d /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org
+chmod 644 /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org/metadata.json
+install -t /usr/share/licenses/gnome-shell-extension-favourites-in-appgrid -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-favourites-in-appgrid.txt
 # Set default wallpaper
 ln -sf xfce /usr/share/backgrounds/gnome
 # Set GNOME Static wallpapers
@@ -947,7 +951,7 @@ set-gdm-theme set -b /usr/share/gdm/gdm-background.png
 cat >> /usr/share/glib-2.0/schemas/10_gnome-shell.gschema.override << "END"
 [org.gnome.shell]
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Software.desktop']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'ding@rastersoft.com', 'clipboard-indicator@tudmotu.com', 'AlphabeticalAppGrid@stuarthayhurst', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'ding@rastersoft.com', 'clipboard-indicator@tudmotu.com', 'AlphabeticalAppGrid@stuarthayhurst', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'favourites-in-appgrid@harshadgavali.gitlab.org']
 
 [org.gnome.desktop.interface]
 color-scheme='prefer-dark'
