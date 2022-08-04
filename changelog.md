@@ -7,7 +7,8 @@ Changes:
 - [GNOME] The battery percentage is now displayed next to the battery icon in the status bar.
 - [GNOME] Improved implementation of default wallpapers.
 - [GNOME] Reduced the default size of icons in File Manager.
-- [GNOME] Fixed issues with touchpad clicking 
+- [GNOME] Fixed issues with touchpad clicking.
+- [GNOME] Improved implementation of login screen logo. 
 
 Upgraded software (GNOME):
 

@@ -935,10 +935,6 @@ END
 
 mkdir /etc/dconf/db/gdm.d/
 
-cat >> /etc/dconf/db/gdm.d/01-logo << "END"
-[org/gnome/login-screen]
-logo='/usr/share/massos/massos-logo-extrasmall.png'
-END
 mkdir /etc/gtk-4.0
 cat >> /etc/gtk-4.0/settings.ini << "END"
 [Settings]
@@ -984,6 +980,9 @@ picture-uri='file:///usr/share/gdm/gdm-background.png'
 
 [org.gnome.nautilus.icon-view]
 default-zoom-level='standard'
+
+[org.gnome.login-screen]
+logo='/usr/share/massos/massos-logo-extrasmall.png'
 
 [org.gnome.terminal.legacy]
 theme-variant='dark'
