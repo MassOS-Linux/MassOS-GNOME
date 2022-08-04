@@ -25,7 +25,6 @@ mkdir malcontent-build; cd malcontent-build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
-rm -f /usr/share/applications/org.freedesktop.MalcontentControl.desktop
 install -t /usr/share/licenses/malcontent -Dm644 ../COPYING ../COPYING-DOCS
 cd ../..
 rm -rf malcontent-0.10.4
@@ -911,8 +910,6 @@ chmod 644 /usr/share/gnome-shell/extensions/gnome-fuzzy-app-search@gnome-shell-e
 install -t /usr/share/licenses/gnome-shell-extension-fuzzy-app-search -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-fuzzy-app-search.txt
 # Set default wallpaper
 ln -sf xfce /usr/share/backgrounds/gnome
-ln -sf MassOS-Futuristic-Dark.png /usr/share/backgrounds/xfce/adwaita-d.jpg
-ln -sf MassOS-Futuristic-Light.png /usr/share/backgrounds/xfce/adwaita-l.jpg
 # Set GNOME Static wallpapers
 install -dm755 /usr/share/gnome-background-properties
 while read -r bg; do
@@ -976,23 +973,17 @@ center-new-windows=true
 
 [org.gnome.desktop.peripherals.touchpad]
 tap-to-click=true
+click-method='default'
 
-[gnome.settings-daemon.plugins.media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
-search=['/org/gnome/settings-daemon/plugins/media-keys/search']
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/gnome/MassOS-Futuristic-Light.png'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/MassOS-Futuristic-Dark.png'
 
-[org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/]
-name='Terminal'
-command='gnome-terminal'
-binding='<Control><Alt>t'
+[org.gnome.desktop.screensaver]
+picture-uri='file:///usr/share/gdm/gdm-background.png'
 
-[org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/]
-name='Home Folder'
-command='nautilus $HOME'
-binding='<Super>e'
-
-[org.gnome.settings-daemon.plugins.media-keys.search:/org/gnome/settings-daemon/plugins/media-keys/search]
-binding='<Super>r'
+[org.gnome.nautilus.icon-view]
+default-zoom-level='standard'
 
 [org.gnome.terminal.legacy]
 theme-variant='dark'
