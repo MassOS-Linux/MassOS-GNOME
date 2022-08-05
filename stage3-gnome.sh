@@ -299,15 +299,15 @@ install -t /usr/share/licenses/zenity -Dm644 ../COPYING
 cd ../..
 rm -rf zenity-3.42.1
 # libadwaita
-tar -xf libadwaita-1.1.3.tar.xz
-cd libadwaita-1.1.3
+tar -xf libadwaita-1.1.4.tar.xz
+cd libadwaita-1.1.4
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dtests=false -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libadwaita -Dm644 ../COPYING
 cd ../..
-rm -rf libadwaita-1.1.3
+rm -rf libadwaita-1.1.4
 # gnome-bluetooth
 tar -xf gnome-bluetooth-42.2.tar.xz
 cd gnome-bluetooth-42.2
@@ -830,15 +830,15 @@ install -t /usr/share/licenses/gparted -Dm644 COPYING
 cd ..
 rm -rf gparted-GPARTED_1_4_0
 # GNOME Software.
-tar -xf gnome-software-42.3.tar.xz
-cd gnome-software-42.3
+tar -xf gnome-software-42.4.tar.xz
+cd gnome-software-42.4
 mkdir gnome-software-build; cd gnome-software-build
 meson --prefix=/usr --buildtype=minsize -Dfwupd=false -Dpackagekit=false -Dtests=false -Dvalgrind=false -Dsoup2=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-software -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-software-42.3
+rm -rf gnome-software-42.4
 # totem
 tar -xf totem-42.0.tar.xz
 cd totem-42.0
@@ -967,6 +967,12 @@ show-battery-percentage=true
 [org.gnome.desktop.wm.preferences]
 button-layout='appmenu:minimize,maximize,close'
 titlebar-font='Cantarell Bold 11'
+
+[org.gnome.desktop.wm.keybindings]
+switch-applications = ['<Super>Tab']
+switch-windows = ['<Alt>Tab']
+switch-applications-backward = ['<Shift><Super>Tab']
+switch-windows-backward = ['<Shift><Alt>Tab']
 
 [org.gnome.mutter]
 center-new-windows=true

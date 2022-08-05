@@ -10,10 +10,12 @@ Changes:
 - [GNOME] Fixed issues with touchpad clicking.
 - [GNOME] Improved implementation of login screen logo. 
 - [GNOME] Added extension to make favourites apps still appear in app grid. 
+- [GNOME] Improved window switching. 
 
 Upgraded software (GNOME):
 
-- Development has only just begun, check back soon!
+- gnome-software: `42.3 --> 42.4`
+- libadwaita: `1.1.3 --> 1.1.4`
 
 # MassOS 2022.08
 First official release of MassOS with GNOME support.
