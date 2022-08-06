@@ -872,6 +872,7 @@ rm -rf gnome-characters-42.0
 # gdm-tools
 tar -xf gdm-tools-1.1.tar.gz
 cd gdm-tools-1.1
+sed -i 's|"$PREFIX"/man|"$PREFIX"/share/man|' install.sh
 PREFIX=/usr ./install.sh
 install -t /usr/share/licenses/gdm-tools -Dm644 LICENSE
 cd ..
