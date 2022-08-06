@@ -61,7 +61,7 @@ rm -rf GConf-3.2.6
 tar -xf geocode-glib-3.26.3.tar.xz
 cd geocode-glib-3.26.3
 mkdir build; cd build
-meson --prefix /usr --buildtype=minsize -Denable-gtk-doc=false ..
+meson --prefix /usr --buildtype=minsize -Denable-gtk-doc=false -Denable-installed-tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/geocode-glib -Dm644 ../COPYING.LIB
