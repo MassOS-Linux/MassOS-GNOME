@@ -90,7 +90,7 @@ rm -rf adwaita-icon-theme-42.0
 tar -xf tracker-3.3.2.tar.xz
 cd tracker-3.3.2
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dman=true ..
+meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dman=true -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/tracker -Dm644 ../COPYING
@@ -109,7 +109,7 @@ rm -rf libgrss-0.7.0
 tar -xf tracker-miners-3.3.1.tar.xz
 cd tracker-miners-3.3.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dman=true ..
+meson --prefix=/usr --buildtype=minsize -Dman=true -Dfunctional_tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/tracker-miners -Dm644 ../COPYING ../COPYING.GPL ../COPYING.LGPL
@@ -186,7 +186,7 @@ rm -rf gnome-video-effects-0.5.0
 tar -xf grilo-0.3.14.tar.xz
 cd grilo-0.3.14
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Denable-gtk-doc=false ..
+meson --prefix=/usr --buildtype=minsize -Denable-gtk-doc=false -Denable-test-ui=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/grilo -Dm644 ../COPYING
@@ -712,7 +712,7 @@ rm -rf file-roller-3.42.0
 tar -xf gtksourceview-5.5.0.tar.xz
 cd gtksourceview-5.5.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize ..
+meson --prefix=/usr --buildtype=minsize -Dsysprof=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gtksourceview5 -Dm644 ../COPYING
