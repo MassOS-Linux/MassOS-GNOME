@@ -883,7 +883,7 @@ cd gnome-tour-42.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 RUSTFLAGS="-C relocation-model=dynamic-no-pic" ninja
-ninja install
+RUSTFLAGS="-C relocation-model=dynamic-no-pic" ninja install
 install -t /usr/share/licenses/gnome-tour -Dm644 ../LICENSE.md
 cd ../..
 rm -rf gnome-tour-42.0
@@ -931,7 +931,7 @@ while read -r bg; do
 </wallpapers>
 END
 done <<< $(find /usr/share/backgrounds/xfce -type f -exec basename -a {} + | cut -d. -f1 | sed '/About-Backgrounds/d')
-# Customise GDM
+# Modify GDM and GTK4
 cat >> /etc/dconf/profile/gdm << "END"
 user-db:user
 system-db:gdm
