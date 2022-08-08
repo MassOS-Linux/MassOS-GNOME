@@ -27,7 +27,5 @@ Upgraded software (GNOME):
 - gtksourceview5: `5.5.0 --> 5.5.1`
 - rygel: `0.41.1 --> 0.41.2`
 
-
-
 # MassOS 2022.08
 First official release of MassOS with GNOME support.
