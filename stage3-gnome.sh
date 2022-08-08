@@ -998,6 +998,21 @@ logo='/usr/share/massos/massos-logo-sidetext.png'
 [org.gnome.terminal.legacy]
 theme-variant='dark'
 END
+# GNOME User keyboard shortcuts 
+cat >> /usr/share/glib-2.0/schemas/99_extra_keybindings.gschema.override << "END"
+[org.gnome.settings-daemon.plugins.media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/]
+
+[org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom0]
+binding='<Ctrl><Alt>t'
+command='gnome-terminal'
+name='Terminal'
+
+[org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom1]
+binding='<Super>e'
+command='nautilus'
+name='Home Folder'
+END
 # End tweaks
 update-desktop-database
 dconf update
