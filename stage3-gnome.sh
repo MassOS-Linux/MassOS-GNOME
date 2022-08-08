@@ -58,15 +58,15 @@ install -t /usr/share/licenses/gconf -Dm644 COPYING
 cd ..
 rm -rf GConf-3.2.6
 # geocode-glib
-tar -xf geocode-glib-3.26.3.tar.xz
-cd geocode-glib-3.26.3
+tar -xf geocode-glib-3.26.4.tar.xz
+cd geocode-glib-3.26.4
 mkdir build; cd build
 meson --prefix /usr --buildtype=minsize -Denable-gtk-doc=false -Denable-installed-tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/geocode-glib -Dm644 ../COPYING.LIB
 cd ../..
-rm -rf geocode-glib-3.26.3
+rm -rf geocode-glib-3.26.4
 # gnome-autoar
 tar -xf gnome-autoar-0.4.3.tar.xz
 cd gnome-autoar-0.4.3
@@ -126,15 +126,15 @@ install -t /usr/share/licenses/libcloudproviders -Dm644 ../LICENSE
 cd ../..
 rm -rf libcloudproviders-0.3.1
 # gtk4
-tar -xf gtk-4.6.6.tar.xz
-cd gtk-4.6.6
+tar -xf gtk-4.7.1.tar.xz
+cd gtk-4.7.1
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dx11-backend=true -Dwayland-backend=true -Dbroadway-backend=true -Dmedia-ffmpeg=enabled -Ddemos=false -Dmedia-gstreamer=enabled -Dprint-cups=enabled -Dvulkan=enabled -Dcloudproviders=enabled -Dsysprof=enabled -Dtracker=enabled -Dcolord=enabled -Dgtk_doc=false -Dman-pages=true -Dbuild-examples=false -Dbuild-tests=false -Dinstall-tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gtk4 -Dm644 ../COPYING
 cd ../..
-rm -rf gtk-4.6.6
+rm -rf gtk-4.7.1
 # JS91.
 tar -xf firefox-91.12.0esr.source.tar.xz
 cd firefox-91.12.0
@@ -149,20 +149,20 @@ install -t /usr/share/licenses/js91 -Dm644 ../../extra-package-licenses/js91-lic
 cd ../..
 rm -rf firefox-91.12.0
 # Gjs (Precompiled)
-tar --no-same-owner --same-permissions -xf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07.tar.xz
-cp -a gjs-1.73.1-x86_64-precompiled-MassOS-2022.07/BINARY/* /
+tar --no-same-owner --same-permissions -xf gjs-1.73.2-x86_64-precompiled-MassOS-2022.07.tar.xz
+cp -a gjs-1.73.2-x86_64-precompiled-MassOS-2022.07/BINARY/* /
 ldconfig
-rm -rf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07
+rm -rf gjs-1.73.2-x86_64-precompiled-MassOS-2022.07
 # gnome-desktop
-tar -xf gnome-desktop-42.3.tar.xz
-cd gnome-desktop-42.3
+tar -xf gnome-desktop-42.4.tar.xz
+cd gnome-desktop-42.4
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgnome_distributor="MassOS" -Ddebug_tools=false -Dsystemd=enabled -Dgtk_doc=false -Dinstalled_tests=false -Dbuild_gtk4=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-desktop -Dm644 ../COPYING ../COPYING-DOCS ../COPYING.LIB
 cd ../..
-rm -rf gnome-desktop-42.3
+rm -rf gnome-desktop-42.4
 # gnome-menus
 tar -xf gnome-menus-3.36.0.tar.xz
 cd gnome-menus-3.36.0
@@ -390,25 +390,25 @@ install -t /usr/share/licenses/cups-pk-helper -Dm644 COPYING
 cd ..
 rm -rf cups-pk-helper-0.2.6
 # gssdp
-tar -xf gssdp-1.5.1.tar.xz
-cd gssdp-1.5.1
+tar -xf gssdp-1.5.2.tar.xz
+cd gssdp-1.5.2
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gssdp -Dm644 ../COPYING
 cd ../..
-rm -rf gssdp-1.5.1
+rm -rf gssdp-1.5.2
 # gupnp
-tar -xf gupnp-1.5.2.tar.xz
-cd gupnp-1.5.2
+tar -xf gupnp-1.5.3.tar.xz
+cd gupnp-1.5.3
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gupnp -Dm644 ../COPYING
 cd ../..
-rm -rf gupnp-1.5.2
+rm -rf gupnp-1.5.3
 # gupnp-av
 tar -xf gupnp-av-0.14.1.tar.xz
 cd gupnp-av-0.14.1
@@ -450,15 +450,15 @@ install -t /usr/share/licenses/libmediaart -Dm644 ../COPYING ../COPYING.LESSER
 cd ../..
 rm -rf libmediaart-1.9.6
 # rygel
-tar -xf rygel-0.41.1.tar.xz
-cd rygel-0.41.1
+tar -xf rygel-0.41.2.tar.xz
+cd rygel-0.41.2
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dexamples=false -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/rygel -Dm644 ../COPYING ../COPYING.logo
 cd ../..
-rm -rf rygel-0.41.1
+rm -rf rygel-0.41.2
 # gnome-control-center
 tar -xf gnome-control-center-42.3.tar.xz
 cd gnome-control-center-42.3
@@ -679,15 +679,15 @@ install -t /usr/share/licenses/cheese -Dm644 ../COPYING
 cd ../..
 rm -rf cheese-41.1
 # EOG
-tar -xf eog-42.2.tar.xz
-cd eog-42.2
+tar -xf eog-42.3.tar.xz
+cd eog-42.3
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dinstalled_tests=false -Dlibportal=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/eog -Dm644 ../COPYING
 cd ../..
-rm -rf eog-42.2
+rm -rf eog-42.3
 # Evince.
 tar -xf evince-42.3.tar.xz
 cd evince-42.3
@@ -709,15 +709,15 @@ install -t /usr/share/licenses/file-roller -Dm644 ../COPYING
 cd ../..
 rm -rf file-roller-3.42.0
 # gtksourceview5
-tar -xf gtksourceview-5.5.0.tar.xz
-cd gtksourceview-5.5.0
+tar -xf gtksourceview-5.5.1.tar.xz
+cd gtksourceview-5.5.1
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dsysprof=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gtksourceview5 -Dm644 ../COPYING
 cd ../..
-rm -rf gtksourceview-5.5.0
+rm -rf gtksourceview-5.5.1
 # gnome-calculator
 tar -xf gnome-calculator-42.2.tar.xz
 cd gnome-calculator-42.2
