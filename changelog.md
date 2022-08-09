@@ -4,7 +4,6 @@ This document contains the changes for each release of the GNOME port. It will b
 # Current Development
 Changes:
 
-- [GNOME] Added keyboard shortcuts to open the file manager (Super+E), open the search (Super+R), and open the terminal (Control+Alt+T).
 - [GNOME] The battery percentage is now displayed next to the battery icon in the status bar.
 - [GNOME] Improved implementation of default wallpapers.
 - [GNOME] Reduced the default size of icons in File Manager.
