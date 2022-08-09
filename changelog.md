@@ -20,7 +20,6 @@ Upgraded software (GNOME):
 - eog: `42.2 --> 42.3`
 - geocode-glib: `3.26.3 --> 3.26.4`
 - gtk4: `4.6.6 --> 4.7.1`
-- gjs: `1.73.1 --> 1.73.2`
 - gnome-desktop: `42.3 --> 42.4`
 - gssdp: `1.5.1 --> 1.5.2`
 - gupnp: `1.5.2 --> 1.5.3`

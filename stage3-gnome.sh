@@ -149,10 +149,10 @@ install -t /usr/share/licenses/js91 -Dm644 ../../extra-package-licenses/js91-lic
 cd ../..
 rm -rf firefox-91.12.0
 # Gjs (Precompiled)
-tar --no-same-owner --same-permissions -xf gjs-1.73.2-x86_64-precompiled-MassOS-2022.07.tar.xz
-cp -a gjs-1.73.2-x86_64-precompiled-MassOS-2022.07/BINARY/* /
+tar --no-same-owner --same-permissions -xf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07.tar.xz
+cp -a gjs-1.73.1-x86_64-precompiled-MassOS-2022.07/BINARY/* /
 ldconfig
-rm -rf gjs-1.73.2-x86_64-precompiled-MassOS-2022.07
+rm -rf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07
 # gnome-desktop
 tar -xf gnome-desktop-42.4.tar.xz
 cd gnome-desktop-42.4
