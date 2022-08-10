@@ -970,10 +970,10 @@ button-layout='appmenu:minimize,maximize,close'
 titlebar-font='Cantarell Bold 11'
 
 [org.gnome.desktop.wm.keybindings]
-switch-applications = ['<Super>Tab']
-switch-windows = ['<Alt>Tab']
-switch-applications-backward = ['<Shift><Super>Tab']
-switch-windows-backward = ['<Shift><Alt>Tab']
+switch-applications=['<Super>Tab']
+switch-windows=['<Alt>Tab']
+switch-applications-backward=['<Shift><Super>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
 
 [org.gnome.mutter]
 center-new-windows=true
