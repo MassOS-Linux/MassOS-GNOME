@@ -126,15 +126,15 @@ install -t /usr/share/licenses/libcloudproviders -Dm644 ../LICENSE
 cd ../..
 rm -rf libcloudproviders-0.3.1
 # gtk4
-tar -xf gtk-4.7.1.tar.xz
-cd gtk-4.7.1
+tar -xf gtk-4.6.6.tar.xz
+cd gtk-4.6.6
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dx11-backend=true -Dwayland-backend=true -Dbroadway-backend=true -Dmedia-ffmpeg=enabled -Ddemos=false -Dmedia-gstreamer=enabled -Dprint-cups=enabled -Dvulkan=enabled -Dcloudproviders=enabled -Dsysprof=enabled -Dtracker=enabled -Dcolord=enabled -Dgtk_doc=false -Dman-pages=true -Dbuild-examples=false -Dbuild-tests=false -Dinstall-tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gtk4 -Dm644 ../COPYING
 cd ../..
-rm -rf gtk-4.7.1
+rm -rf gtk-4.6.6
 # JS91.
 tar -xf firefox-91.12.0esr.source.tar.xz
 cd firefox-91.12.0
