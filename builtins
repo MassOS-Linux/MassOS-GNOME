@@ -29,7 +29,6 @@ grilo-plugins
 gfbgraph
 gsound
 gnome-bluetooth
-gnome-keyring
 gnome-session
 gnome-settings-daemon
 gssdp

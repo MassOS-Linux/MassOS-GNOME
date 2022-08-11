@@ -318,15 +318,6 @@ ninja install
 install -t /usr/share/licenses/gnome-bluetooth -Dm644 ../COPYING ../COPYING.LIB
 cd ../..
 rm -rf gnome-bluetooth-42.2
-# gnome-keyring
-tar -xf gnome-keyring-42.1.tar.xz
-cd gnome-keyring-42.1
-./configure --prefix=/usr --sysconfdir=/etc
-make
-make install
-install -t /usr/share/licenses/gnome-keyring -Dm644 COPYING COPYING.LIB
-cd ..
-rm -rf gnome-keyring-42.1
 # gnome-session
 tar -xf gnome-session-42.0.tar.xz
 cd gnome-session-42.0
