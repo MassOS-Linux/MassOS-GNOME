@@ -87,15 +87,15 @@ install -t /usr/share/licenses/adwaita-icon-theme -Dm644 COPYING COPYING_CCBYSA3
 cd ..
 rm -rf adwaita-icon-theme-42.0
 # Tracker
-tar -xf tracker-3.3.2.tar.xz
-cd tracker-3.3.2
+tar -xf tracker-3.3.3.tar.xz
+cd tracker-3.3.3
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dman=true -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/tracker -Dm644 ../COPYING
 cd ../..
-rm -rf tracker-3.3.2
+rm -rf tracker-3.3.3
 # libgrss
 tar -xf libgrss-0.7.0.tar.xz
 cd libgrss-0.7.0
@@ -222,15 +222,15 @@ install -t /usr/share/licenses/libgweather -Dm644 ../COPYING
 cd ../..
 rm -rf libgweather-4.0.0
 # evolution-data-server
-tar -xf evolution-data-server-3.44.3.tar.xz
-cd evolution-data-server-3.44.3
+tar -xf evolution-data-server-3.44.4.tar.xz
+cd evolution-data-server-3.44.4
 mkdir build; cd build
 cmake -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DENABLE_VALA_BINDINGS=ON -DENABLE_INSTALLED_TESTS=OFF -DENABLE_GOOGLE=ON -DWITH_OPENLDAP=ON -DWITH_KRB5=ON -DENABLE_INTROSPECTION=ON -DENABLE_GTK_DOC=OFF -DWITH_LIBDB=ON -DWITH_GWEATHER4=ON -DWITH_SYSTEMDUSERUNITDIR=yes -Wno-dev -G Ninja ..
 ninja
 ninja install
 install -t /usr/share/licenses/evolution-data-server -Dm644 ../COPYING
 cd ../..
-rm -rf evolution-data-server-3.44.3
+rm -rf evolution-data-server-3.44.4
 # telepathy-glib
 tar -xf telepathy-glib-0.24.2.tar.gz
 cd telepathy-glib-0.24.2
@@ -289,15 +289,15 @@ install -t /usr/share/licenses/exempi -Dm644 COPYING
 cd ..
 rm -rf exempi-2.6.2
 # Zenity
-tar -xf zenity-3.42.1.tar.xz
-cd zenity-3.42.1
+tar -xf zenity-3.43.0.tar.xz
+cd zenity-3.43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dlibnotify=true -Dwebkitgtk=true ..
+meson --prefix=/usr --buildtype=minsize -Dlibnotify=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/zenity -Dm644 ../COPYING
 cd ../..
-rm -rf zenity-3.42.1
+rm -rf zenity-3.43.0
 # libadwaita
 tar -xf libadwaita-1.1.4.tar.xz
 cd libadwaita-1.1.4
@@ -371,15 +371,14 @@ install -t /usr/share/licenses/colord-gtk -Dm644 ../COPYING
 cd ../..
 rm -rf colord-gtk-0.3.0
 # cups-pk-helper
-tar -xf cups-pk-helper-0.2.6.tar.xz
-cd cups-pk-helper-0.2.6
-patch -Np1 -i ../patches/cups-pk-helper-0.2.6-consolidated_fixes-1.patch
+tar -xf cups-pk-helper-0.2.7.tar.xz
+cd cups-pk-helper-0.2.7
 ./configure --prefix=/usr --sysconfdir=/etc
 make
 make install
 install -t /usr/share/licenses/cups-pk-helper -Dm644 COPYING
 cd ..
-rm -rf cups-pk-helper-0.2.6
+rm -rf cups-pk-helper-0.2.7
 # gssdp
 tar -xf gssdp-1.5.2.tar.xz
 cd gssdp-1.5.2
@@ -461,15 +460,15 @@ install -t /usr/share/licenses/gnome-control-center -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-control-center-42.3
 # Mutter
-tar -xf mutter-42.3.tar.xz
-cd mutter-42.3
+tar -xf mutter-42.4.tar.xz
+cd mutter-42.4
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dtests=false -Dinstalled_tests=false -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/mutter -Dm644 ../COPYING
 cd ../..
-rm -rf mutter-42.3
+rm -rf mutter-42.4
 # GDM
 groupadd -g 67 gdm
 useradd -c "GDM Daemon" -d /var/lib/gdm -u 67 -g gdm -s /bin/false gdm
@@ -492,15 +491,15 @@ install -t /usr/share/licenses/telepathy-mission-control -Dm644 COPYING
 cd ..
 rm -rf telepathy-mission-control-5.16.6
 # gnome-shell
-tar -xf gnome-shell-42.3.1.tar.xz
-cd gnome-shell-42.3.1
+tar -xf gnome-shell-42.4.tar.xz
+cd gnome-shell-42.4
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dextensions_tool=true -Dextensions_app=false -Dgtk_doc=false -Dman=true -Dtests=false -Dnetworkmanager=true -Dsystemd=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-shell -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-shell-42.3.1
+rm -rf gnome-shell-42.4
 # gnome-shell-extensions
 tar -xf gnome-shell-extensions-42.3.tar.xz
 cd gnome-shell-extensions-42.3
