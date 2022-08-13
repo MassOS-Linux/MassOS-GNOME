@@ -14,7 +14,6 @@ eog
 evince
 folks
 file-roller
-js91
 firefox
 gconf
 geocode-glib
@@ -69,6 +68,7 @@ gnome-shell-extension-fuzzy-app-search
 gnome-shell-extension-favourites-in-appgrid
 gnome-browser-connector
 ibus
+js91
 libgrss
 libcloudproviders
 libgtop
