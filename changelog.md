@@ -17,7 +17,7 @@ Upgraded software (GNOME):
 - cups-pk-helper: `0.2.6 --> 0.2.7`
 - eog: `42.2 --> 42.3`
 - evolution-data-server: `3.44.3 --> 3.44.4`
-- Firefox: `103.0.1 --> 103.2`
+- Firefox: `103.0.1 --> 103.0.2`
 - gnome-software: `42.3 --> 42.4`
 - gnome-shell: `42.3.1 --> 42.4`
 - geocode-glib: `3.26.3 --> 3.26.4`
