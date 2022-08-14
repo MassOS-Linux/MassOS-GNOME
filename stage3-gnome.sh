@@ -982,6 +982,9 @@ picture-uri='file:///usr/share/gdm/gdm-background.png'
 [org.gnome.nautilus.icon-view]
 default-zoom-level='standard'
 
+[org.gnome.nautilus.preferences]
+show-delete-permanently=true 
+
 [org.gnome.login-screen]
 logo='/usr/share/massos/massos-logo-sidetext.png'
 

@@ -11,6 +11,7 @@ Changes:
 - [GNOME] Improved implementation of login screen logo. 
 - [GNOME] Added extension to make favourites apps still appear in app grid. 
 - [GNOME] Improved window switching. 
+- [GNOME] Added the Delete Permanently option in the File Manager context menu.
 
 Upgraded software (GNOME):
 
