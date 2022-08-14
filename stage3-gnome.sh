@@ -373,11 +373,12 @@ rm -rf colord-gtk-0.3.0
 # cups-pk-helper
 tar -xf cups-pk-helper-0.2.7.tar.xz
 cd cups-pk-helper-0.2.7
-./configure --prefix=/usr --sysconfdir=/etc
-make
-make install
-install -t /usr/share/licenses/cups-pk-helper -Dm644 COPYING
-cd ..
+mkdir build; cd build
+meson --prefix=/usr --buildtype=minsize ..
+ninja
+ninja install
+install -t /usr/share/licenses/cups-pk-helper -Dm644 ../COPYING
+cd ../..
 rm -rf cups-pk-helper-0.2.7
 # gssdp
 tar -xf gssdp-1.5.2.tar.xz
