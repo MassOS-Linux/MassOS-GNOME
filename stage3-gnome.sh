@@ -824,7 +824,7 @@ rm -rf gparted-GPARTED_1_4_0
 tar -xf gnome-software-42.4.tar.xz
 cd gnome-software-42.4
 mkdir gnome-software-build; cd gnome-software-build
-meson --prefix=/usr --buildtype=minsize -Dfwupd=false -Dpackagekit=false -Dtests=false -Dvalgrind=false -Dsoup2=true ..
+meson --prefix=/usr --buildtype=minsize -Dpackagekit=false -Dtests=false -Dvalgrind=false -Dsoup2=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-software -Dm644 ../COPYING
