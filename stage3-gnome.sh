@@ -579,7 +579,7 @@ make install
 install -t /usr/share/licenses/ytnef -Dm644 COPYING
 cd ..
 rm -rf ytnef
-# Main GNOME apps
+# Main GNOME apps.
 # Nautilus
 tar -xf nautilus-42.2.tar.xz
 cd nautilus-42.2
@@ -622,7 +622,7 @@ install -t /usr/share/licenses/gnome-calendar -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-calendar-42.2
 # gnome-extension-manager
-tar -xf extension-manager-0.3.1.tar.gz
+tar -xf gnome-extension-manager-0.3.1.tar.gz
 cd extension-manager-0.3.1
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
