@@ -860,6 +860,16 @@ ninja install
 install -t /usr/share/licenses/gnome-characters -Dm644 ../COPYING ../COPYINGv2
 cd ../..
 rm -rf gnome-characters-42.0
+# gnome-firmware
+tar -xf gnome-firmware-42.2
+cd gnome-firmware-42.2
+mkdir gnome-firmware-build; cd gnome-firmware-build
+meson --prefix=/usr --buildtype=minsize ..
+ninja
+ninja install
+install -t /usr/share/licenses/gnome-firmware -Dm644 ../COPYING
+cd ../..
+rm -rf gnome-firmware-42.2
 # gdm-tools
 tar -xf gdm-tools-1.1.tar.gz
 cd gdm-tools-1.1

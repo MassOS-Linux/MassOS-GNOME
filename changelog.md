@@ -12,7 +12,7 @@ Changes:
 - [GNOME] Added extension to make favourites apps still appear in app grid. 
 - [GNOME] Improved window switching. 
 - [GNOME] Added the Delete Permanently option in the File Manager context menu.
-
+- [GNOME] Added gnome-firmware to complement fwupd.
 Upgraded software (GNOME):
 
 - cups-pk-helper: `0.2.6 --> 0.2.7`
