@@ -35,5 +35,6 @@ Upgraded software (GNOME):
 - rygel: `0.41.1 --> 0.41.2`
 - tracker: `3.3.2 --> 3.3.3`
 - zenity: `3.42.1 --> 3.43.0`
+
 # MassOS 2022.08
 First official release of MassOS with GNOME support.
