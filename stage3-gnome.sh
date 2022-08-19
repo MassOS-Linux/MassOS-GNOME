@@ -532,7 +532,7 @@ rm -rf gnome-browser-connector-v42.0
 # cantarell-fonts
 tar -xf cantarell-fonts-0.303.1.tar.xz
 cd cantarell-fonts-0.303.1
-cp /sources/Cantarell-VF.otf prebuilt
+cp ../Cantarell-VF.otf prebuilt
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Duseprebuilt=true ..
 ninja
