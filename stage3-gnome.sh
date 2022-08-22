@@ -77,15 +77,6 @@ ninja install
 install -t /usr/share/licenses/gnome-autoar -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-autoar-0.4.3
-# adwaita-icon-theme (Rebuilt to 42)
-tar -xf adwaita-icon-theme-42.0.tar.xz
-cd adwaita-icon-theme-42.0
-./configure --prefix=/usr
-make
-make install
-install -t /usr/share/licenses/adwaita-icon-theme -Dm644 COPYING COPYING_CCBYSA3 COPYING_LGPL
-cd ..
-rm -rf adwaita-icon-theme-42.0
 # Tracker
 tar -xf tracker-3.3.3.tar.xz
 cd tracker-3.3.3
