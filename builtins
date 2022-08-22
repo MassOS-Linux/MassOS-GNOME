@@ -7,7 +7,6 @@ cups-pk-helper
 cheese
 dconf
 evolution-data-server
-extension-manager
 exempi
 eog
 evince
@@ -66,6 +65,7 @@ gnome-shell-extension-alphabetical-grid-extension
 gnome-shell-extension-fuzzy-app-search
 gnome-shell-extension-favourites-in-appgrid
 gnome-browser-connector
+gnome-extension-manager
 gnome-firmware
 ibus
 js91

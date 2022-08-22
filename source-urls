@@ -12,7 +12,6 @@ https://extensions.gnome.org/extension-data/clipboard-indicatortudmotu.com.v42.s
 https://ftp.acc.umu.se/pub/gnome/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://extensions.gnome.org/extension-data/dingrastersoft.com.v46.shell-extension.zip
 https://ftp.acc.umu.se/pub/gnome/sources/evolution-data-server/3.44/evolution-data-server-3.44.4.tar.xz
-https://github.com/mjakeman/extension-manager/archive/v0.3.1/gnome-extension-manager-0.3.1.tar.gz
 https://libopenraw.freedesktop.org/download/exempi-2.6.2.tar.bz2
 https://ftp.acc.umu.se/pub/gnome/sources/eog/42/eog-42.3.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/evince/42/evince-42.3.tar.xz
@@ -69,6 +68,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/gnome-tour/42/gnome-tour-42.0.tar.xz
 https://extensions.gnome.org/extension-data/gnome-fuzzy-app-searchgnome-shell-extensions.Czarlie.gitlab.com.v16.shell-extension.zip
 https://archive.massos.org/miscellaneous/gdm-background.png
 https://gitlab.gnome.org/nE0sIghT/gnome-browser-connector/-/archive/v42.0/gnome-browser-connector-v42.0.tar.bz2
+https://github.com/mjakeman/extension-manager/archive/v0.3.1/gnome-extension-manager-0.3.1.tar.gz
 https://gitlab.gnome.org/World/gnome-firmware/-/archive/42.2/gnome-firmware-42.2.tar.gz
 https://github.com/ibus/ibus/releases/download/1.5.26/ibus-1.5.26.tar.gz
 https://ftp.acc.umu.se/pub/gnome/sources/libgrss/0.7/libgrss-0.7.0.tar.xz
