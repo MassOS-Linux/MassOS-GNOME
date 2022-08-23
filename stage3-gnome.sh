@@ -355,7 +355,7 @@ rm -rf ibus-1.5.26
 tar -xf colord-gtk-0.3.0.tar.xz
 cd colord-gtk-0.3.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dgtk4=true -Dgtk3=true -Dgtk2=true -Dtests=false -Dman=false -Ddocs=false ..
+meson --prefix=/usr --buildtype=minsize -Dgtk4=true -Dgtk3=true -Dgtk2=false -Dtests=false -Dman=false -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/colord-gtk -Dm644 ../COPYING
