@@ -16,18 +16,6 @@ export SHELL=/bin/bash
 export CFLAGS="-Os -pipe" CXXFLAGS="-Os -pipe"
 # === IF RESUMING A FAILED BUILD, ONLY REMOVE LINES BELOW THIS ONE.
 # Main GNOME components.
-# Malcontent (dependency of GNOME Software).
-tar -xf malcontent-0.10.4.tar.xz
-cd malcontent-0.10.4
-tar -xf ../libglib-testing-0.1.1.tar.bz2 -C subprojects
-mv subprojects/libglib-testing{-0.1.1,}
-mkdir malcontent-build; cd malcontent-build
-meson --prefix=/usr --buildtype=minsize ..
-ninja
-ninja install
-install -t /usr/share/licenses/malcontent -Dm644 ../COPYING ../COPYING-DOCS
-cd ../..
-rm -rf malcontent-0.10.4
 # totem-pl-parser
 tar -xf totem-pl-parser-3.26.6.tar.xz
 cd totem-pl-parser-3.26.6
