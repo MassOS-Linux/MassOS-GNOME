@@ -840,7 +840,7 @@ install -t /usr/share/licenses/gnome-characters -Dm644 ../COPYING ../COPYINGv2
 cd ../..
 rm -rf gnome-characters-42.0
 # gnome-firmware
-tar -xf gnome-firmware-42.2
+tar -xf gnome-firmware-42.2.tar.gz
 cd gnome-firmware-42.2
 mkdir gnome-firmware-build; cd gnome-firmware-build
 meson --prefix=/usr --buildtype=minsize ..
