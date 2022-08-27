@@ -115,8 +115,8 @@ install -t /usr/share/licenses/gtk4 -Dm644 ../COPYING
 cd ../..
 rm -rf gtk-4.6.7
 # JS91.
-tar -xf firefox-91.12.0esr.source.tar.xz
-cd firefox-91.12.0
+tar -xf firefox-91.13.0esr.source.tar.xz
+cd firefox-91.13.0
 chmod +x js/src/configure.in
 mkdir JS91-build; cd JS91-build
 ../js/src/configure.in --prefix=/usr --enable-linker=lld --with-intl-api --with-system-zlib --with-system-icu --disable-jemalloc --disable-debug-symbols --enable-readline
@@ -126,7 +126,7 @@ rm -f /usr/lib/libjs_static.ajs
 sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js91-config
 install -t /usr/share/licenses/js91 -Dm644 ../../extra-package-licenses/js91-license.txt
 cd ../..
-rm -rf firefox-91.12.0
+rm -rf firefox-91.13.0
 # Gjs (Precompiled)
 tar --no-same-owner --same-permissions -xf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07.tar.xz
 cp -a gjs-1.73.1-x86_64-precompiled-MassOS-2022.07/BINARY/* /
@@ -987,7 +987,7 @@ dconf update
 glib-compile-schemas /usr/share/glib-2.0/schemas
 systemctl enable gdm
 # Firefox.
-tar --no-same-owner -xf firefox-103.0.2.tar.bz2 -C /usr/lib
+tar --no-same-owner -xf firefox-104.0.tar.bz2 -C /usr/lib
 mkdir -p /usr/lib/firefox/distribution
 cat > /usr/lib/firefox/distribution/policies.json << END
 {
