@@ -32,7 +32,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/grilo/0.3/grilo-0.3.15.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/grilo-plugins/0.3/grilo-plugins-0.3.15.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gfbgraph/0.2/gfbgraph-0.2.5.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gsound/1.0/gsound-1.0.3.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/gnome-bluetooth/42/gnome-bluetooth-42.2.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/gnome-bluetooth/42/gnome-bluetooth-42.3.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-session/42/gnome-session-42.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-settings-daemon/42/gnome-settings-daemon-42.2.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gssdp/1.5/gssdp-1.5.2.tar.xz
@@ -68,9 +68,9 @@ https://ftp.acc.umu.se/pub/gnome/sources/gnome-tour/42/gnome-tour-42.0.tar.xz
 https://extensions.gnome.org/extension-data/gnome-fuzzy-app-searchgnome-shell-extensions.Czarlie.gitlab.com.v16.shell-extension.zip
 https://archive.massos.org/miscellaneous/gdm-background.png
 https://gitlab.gnome.org/nE0sIghT/gnome-browser-connector/-/archive/v42.0/gnome-browser-connector-v42.0.tar.bz2
-https://github.com/mjakeman/extension-manager/archive/v0.3.1/gnome-extension-manager-0.3.1.tar.gz
+https://github.com/mjakeman/extension-manager/archive/v0.3.2/gnome-extension-manager-0.3.2.tar.gz
 https://gitlab.gnome.org/World/gnome-firmware/-/archive/42.2/gnome-firmware-42.2.tar.gz
-https://github.com/ibus/ibus/releases/download/1.5.26/ibus-1.5.26.tar.gz
+https://github.com/ibus/ibus/releases/download/1.5.27/ibus-1.5.27.tar.gz
 https://ftp.acc.umu.se/pub/gnome/sources/libgrss/0.7/libgrss-0.7.0.tar.xz
 https://gitlab.gnome.org/World/libcloudproviders/-/archive/0.3.1/libcloudproviders-0.3.1.tar.gz
 https://ftp.acc.umu.se/pub/gnome/sources/libgtop/2.40/libgtop-2.40.0.tar.xz

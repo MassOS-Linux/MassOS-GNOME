@@ -30,6 +30,9 @@ Upgraded software (GNOME):
 - gtk4: `4.6.6 --> 4.6.7`
 - grilo: `0.3.14 --> 0.3.15`
 - grilo-plugins: `0.3.14 --> 0.3.15`
+- gnome-bluetooth: `42.2 --> 42.3`
+- gnome-extension-manager: `0.3.1 --> 0.3.2`
+- ibus: `1.5.26 --> 1.5.27`
 - JS91: `91.12.0 --> 91.13.0`
 - libadwaita: `1.1.3 --> 1.1.4`
 - mutter: `42.3 --> 42.4`

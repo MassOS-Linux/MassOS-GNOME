@@ -288,15 +288,15 @@ install -t /usr/share/licenses/libadwaita -Dm644 ../COPYING
 cd ../..
 rm -rf libadwaita-1.1.4
 # gnome-bluetooth
-tar -xf gnome-bluetooth-42.2.tar.xz
-cd gnome-bluetooth-42.2
+tar -xf gnome-bluetooth-42.3.tar.xz
+cd gnome-bluetooth-42.3
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dsendto=true -Dgtk_doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-bluetooth -Dm644 ../COPYING ../COPYING.LIB
 cd ../..
-rm -rf gnome-bluetooth-42.2
+rm -rf gnome-bluetooth-42.3
 # gnome-session
 tar -xf gnome-session-42.0.tar.xz
 cd gnome-session-42.0
@@ -329,8 +329,8 @@ install -t /usr/share/licenses/libnma -Dm644 ../COPYING ../COPYING.LGPL
 cd ../..
 rm -rf libnma-1.8.40
 # ibus
-tar -xf ibus-1.5.26.tar.gz
-cd ibus-1.5.26
+tar -xf ibus-1.5.27.tar.gz
+cd ibus-1.5.27
 ./configure --prefix=/usr --sysconfdir=/etc --enable-gtk4 --enable-wayland --with-python=python3 --disable-emoji-dict --disable-unicode-dict
 rm -f tools/main.c
 make
@@ -338,7 +338,7 @@ make install
 install -t /usr/share/licenses/ibus -Dm644 COPYING COPYING.unicode
 gzip -dfv /usr/share/man/man{{1,5}/ibus*.gz,5/00-upstream-settings.5.gz}
 cd ..
-rm -rf ibus-1.5.26
+rm -rf ibus-1.5.27
 # colord-gtk4
 tar -xf colord-gtk-0.3.0.tar.xz
 cd colord-gtk-0.3.0
@@ -601,15 +601,15 @@ install -t /usr/share/licenses/gnome-calendar -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-calendar-42.2
 # gnome-extension-manager
-tar -xf gnome-extension-manager-0.3.1.tar.gz
-cd extension-manager-0.3.1
+tar -xf gnome-extension-manager-0.3.2.tar.gz
+cd extension-manager-0.3.2
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-extension-manager -Dm644 ../COPYING
 cd ../..
-rm -rf extension-manager-0.3.1
+rm -rf extension-manager-0.3.2
 # Yelp
 tar -xf yelp-42.1.tar.xz
 cd yelp-42.1
