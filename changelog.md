@@ -4,6 +4,15 @@ This document contains the changes for each release of the GNOME port. It will b
 # Current Development
 Changes:
 
+- [GNOME] Development has only just begun, check back soon!
+
+Upgraded software (GNOME):
+
+- Development has only just begun, check back soon!
+
+# MassOS 2022.09
+Changes:
+
 - [GNOME] The battery percentage is now displayed next to the battery icon in the status bar.
 - [GNOME] Improved implementation of default wallpapers.
 - [GNOME] Reduced the default size of icons in File Manager.
