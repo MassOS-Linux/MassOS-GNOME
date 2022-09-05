@@ -128,7 +128,7 @@ install -t /usr/share/licenses/js91 -Dm644 ../../extra-package-licenses/js91-lic
 cd ../..
 rm -rf firefox-91.13.0
 # Gjs (Precompiled)
-tar --no-same-owner --same-permissions -xf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07.tar.xz
+tar --no-same-owner --same-permissions -xf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07-2.tar.xz
 cp -a gjs-1.73.1-x86_64-precompiled-MassOS-2022.07/BINARY/* /
 ldconfig
 rm -rf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07
@@ -278,15 +278,15 @@ install -t /usr/share/licenses/zenity -Dm644 ../COPYING
 cd ../..
 rm -rf zenity-3.43.0
 # libadwaita
-tar -xf libadwaita-1.1.4.tar.xz
-cd libadwaita-1.1.4
+tar -xf libadwaita-1.1.5.tar.xz
+cd libadwaita-1.1.5
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dtests=false -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libadwaita -Dm644 ../COPYING
 cd ../..
-rm -rf libadwaita-1.1.4
+rm -rf libadwaita-1.1.5
 # gnome-bluetooth
 tar -xf gnome-bluetooth-42.3.tar.xz
 cd gnome-bluetooth-42.3
@@ -370,15 +370,15 @@ install -t /usr/share/licenses/gssdp -Dm644 ../COPYING
 cd ../..
 rm -rf gssdp-1.5.2
 # gupnp
-tar -xf gupnp-1.5.3.tar.xz
-cd gupnp-1.5.3
+tar -xf gupnp-1.5.4.tar.xz
+cd gupnp-1.5.4
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gupnp -Dm644 ../COPYING
 cd ../..
-rm -rf gupnp-1.5.3
+rm -rf gupnp-1.5.4
 # gupnp-av
 tar -xf gupnp-av-0.14.1.tar.xz
 cd gupnp-av-0.14.1
@@ -530,15 +530,15 @@ install -t /usr/share/licenses/text-engine -Dm644 ../COPYING
 cd ../..
 rm -rf text-engine-0.1.1
 # blueprint-compiler
-tar -xf blueprint-compiler-v0.2.0.tar.gz
-cd blueprint-compiler-v0.2.0
+tar -xf blueprint-compiler-v0.4.0.tar.gz
+cd blueprint-compiler-v0.4.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/blueprint-compiler -Dm644 ../COPYING
 cd ../..
-rm -rf blueprint-compiler-v0.2.0
+rm -rf blueprint-compiler-v0.4.0
 # gmime
 tar -xf gmime-3.2.7.tar.xz
 cd gmime-3.2.7
@@ -629,15 +629,6 @@ ninja install
 install -t /usr/share/licenses/baobab -Dm644 ../COPYING ../COPYING.docs
 cd ../..
 rm -rf baobab-42.0
-# clutter-gst
-tar -xf clutter-gst-3.0.27.tar.xz
-cd clutter-gst-3.0.27
-./configure --prefix=/usr
-make
-make install
-install -t /usr/share/licenses/clutter-gst -Dm644 COPYING
-cd ..
-rm -rf clutter-gst-3.0.27
 # Cheese
 tar -xf cheese-41.1.tar.xz
 cd cheese-41.1

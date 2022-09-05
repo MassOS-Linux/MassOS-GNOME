@@ -1,9 +1,8 @@
 https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v42.shell-extension.zip
 https://extensions.gnome.org/extension-data/AlphabeticalAppGridstuarthayhurst.v25.shell-extension.zip
-https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.2.0/blueprint-compiler-v0.2.0.tar.gz
+https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.4.0/blueprint-compiler-v0.4.0.tar.gz
 https://ftp.acc.umu.se/pub/gnome/sources/baobab/42/baobab-42.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/cantarell-fonts/0.303/cantarell-fonts-0.303.1.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/clutter-gst/3.0/clutter-gst-3.0.27.tar.xz
 https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.0.tar.xz
 https://archive.massos.org/miscellaneous/Cantarell-VF.otf
 https://www.freedesktop.org/software/cups-pk-helper/releases/cups-pk-helper-0.2.7.tar.xz
@@ -24,7 +23,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/GConf/3.2/GConf-3.2.6.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-autoar/0.4/gnome-autoar-0.4.3.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gtk/4.6/gtk-4.6.7.tar.xz
-https://archive.massos.org/precompiled/PORTS/gjs-1.73.1-x86_64-precompiled-MassOS-2022.07.tar.xz
+https://archive.massos.org/precompiled/PORTS/gjs-1.73.1-x86_64-precompiled-MassOS-2022.07-2.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-desktop/42/gnome-desktop-42.4.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-video-effects/0.5/gnome-video-effects-0.5.0.tar.xz
@@ -36,7 +35,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/gnome-bluetooth/42/gnome-bluetooth-42.3
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-session/42/gnome-session-42.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-settings-daemon/42/gnome-settings-daemon-42.2.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gssdp/1.5/gssdp-1.5.2.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/gupnp/1.5/gupnp-1.5.3.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/gupnp/1.5/gupnp-1.5.4.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gupnp-av/0.14/gupnp-av-0.14.1.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gupnp-dlna/0.12/gupnp-dlna-0.12.0.tar.xz
 https://gstreamer.freedesktop.org/src/gst-editing-services/gst-editing-services-1.20.3.tar.xz
@@ -75,7 +74,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/libgrss/0.7/libgrss-0.7.0.tar.xz
 https://gitlab.gnome.org/World/libcloudproviders/-/archive/0.3.1/libcloudproviders-0.3.1.tar.gz
 https://ftp.acc.umu.se/pub/gnome/sources/libgtop/2.40/libgtop-2.40.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libgweather/4.0/libgweather-4.0.0.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/libadwaita/1.1/libadwaita-1.1.4.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/libadwaita/1.1/libadwaita-1.1.5.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libmediaart/1.9/libmediaart-1.9.6.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libnma/1.8/libnma-1.8.40.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/mutter/42/mutter-42.4.tar.xz

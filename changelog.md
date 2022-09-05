@@ -8,7 +8,9 @@ Changes:
 
 Upgraded software (GNOME):
 
-- Development has only just begun, check back soon!
+- blueprint-compiler: `0.2.0 --> 0.4.0`
+- gupnp: `1.5.3 --> 1.5.4`
+- libadwaita: `1.1.4 --> 1.1.5`
 
 # MassOS 2022.09
 Changes:
