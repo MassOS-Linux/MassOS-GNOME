@@ -325,7 +325,7 @@ mkdir nma-build; cd nma-build
 meson --prefix=/usr --buildtype=minsize -Dlibnma_gtk4=true ..
 ninja
 ninja install
-install -t /usr/share/licenses/libnma -Dm644 ../COPYING ../COPYING.LGPL
+ln -sf libnma /usr/share/licenses/libnma-gtk4
 cd ../..
 rm -rf libnma-1.10.2
 # ibus
