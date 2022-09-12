@@ -10,7 +10,13 @@ Upgraded software (GNOME):
 
 - blueprint-compiler: `0.2.0 --> 0.4.0`
 - gupnp: `1.5.3 --> 1.5.4`
+- gnome-shell-extension-alphabetical-grid-extension: `25 --> 26`
+- gtk4: `4.6.7 --> 4.8.0`
+- gnome-bluetooth: `42.3 --> 42.4`
+- gnome-shell-extension-fuzzy-app-search: `16 --> 18`
+- gnome-browser-connector: `42.0 --> 42.1`
 - libadwaita: `1.1.4 --> 1.1.5`
+- libnma-gtk4: `1.8.40 --> 1.10.2`
 
 # MassOS 2022.09
 Changes:

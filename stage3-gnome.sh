@@ -105,15 +105,15 @@ install -t /usr/share/licenses/libcloudproviders -Dm644 ../LICENSE
 cd ../..
 rm -rf libcloudproviders-0.3.1
 # gtk4
-tar -xf gtk-4.6.7.tar.xz
-cd gtk-4.6.7
+tar -xf gtk-4.8.0.tar.xz
+cd gtk-4.8.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dx11-backend=true -Dwayland-backend=true -Dbroadway-backend=true -Dmedia-ffmpeg=enabled -Ddemos=false -Dmedia-gstreamer=enabled -Dprint-cups=enabled -Dvulkan=enabled -Dcloudproviders=enabled -Dsysprof=enabled -Dtracker=enabled -Dcolord=enabled -Dgtk_doc=false -Dman-pages=true -Dbuild-examples=false -Dbuild-tests=false -Dinstall-tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gtk4 -Dm644 ../COPYING
 cd ../..
-rm -rf gtk-4.6.7
+rm -rf gtk-4.8.0
 # JS91.
 tar -xf firefox-91.13.0esr.source.tar.xz
 cd firefox-91.13.0
@@ -288,15 +288,15 @@ install -t /usr/share/licenses/libadwaita -Dm644 ../COPYING
 cd ../..
 rm -rf libadwaita-1.1.5
 # gnome-bluetooth
-tar -xf gnome-bluetooth-42.3.tar.xz
-cd gnome-bluetooth-42.3
+tar -xf gnome-bluetooth-42.4.tar.xz
+cd gnome-bluetooth-42.4
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dsendto=true -Dgtk_doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-bluetooth -Dm644 ../COPYING ../COPYING.LIB
 cd ../..
-rm -rf gnome-bluetooth-42.3
+rm -rf gnome-bluetooth-42.4
 # gnome-session
 tar -xf gnome-session-42.0.tar.xz
 cd gnome-session-42.0
@@ -318,16 +318,16 @@ ninja install
 install -t /usr/share/licenses/gnome-settings-daemon -Dm644 ../COPYING ../COPYING.LIB
 cd ../..
 rm -rf gnome-settings-daemon-42.2
-# libnma (GTK4)
-tar -xf libnma-1.8.40.tar.xz
-cd libnma-1.8.40
+# libnma-gtk4
+tar -xf libnma-1.10.2.tar.xz
+cd libnma-1.10.2
 mkdir nma-build; cd nma-build
 meson --prefix=/usr --buildtype=minsize -Dlibnma_gtk4=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/libnma -Dm644 ../COPYING ../COPYING.LGPL
 cd ../..
-rm -rf libnma-1.8.40
+rm -rf libnma-1.10.2
 # ibus
 tar -xf ibus-1.5.27.tar.gz
 cd ibus-1.5.27
@@ -500,14 +500,14 @@ install -t /usr/share/licenses/gnome-user-docs -Dm644 COPYING
 cd ..
 rm -rf gnome-user-docs-42.0
 # gnome-browser-connector
-tar -xf gnome-browser-connector-v42.0.tar.bz2
-cd gnome-browser-connector-v42.0
+tar -xf gnome-browser-connector-v42.1.tar.gz
+cd gnome-browser-connector-v42.1
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja install
 install -t /usr/share/licenses/gnome-browser-connector -Dm644 ../LICENSE
 cd ../..
-rm -rf gnome-browser-connector-v42.0
+rm -rf gnome-browser-connector-v42.1
 # cantarell-fonts
 tar -xf cantarell-fonts-0.303.1.tar.xz
 cd cantarell-fonts-0.303.1
@@ -873,11 +873,11 @@ mkdir /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com; unzip c
 chmod 644 /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-clipboard-indicator -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-clipboard-indicator.txt
 # gnome-shell-extension-alphabetical-grid-extension
-mkdir /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst; unzip AlphabeticalAppGridstuarthayhurst.v25.shell-extension.zip -d /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst
+mkdir /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst; unzip AlphabeticalAppGridstuarthayhurst.v26.shell-extension.zip -d /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst
 chmod 644 /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-alphabetical-grid-extension -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-alphabetical-grid-extension.txt
 # gnome-shell-extension-fuzzy-app-search
-mkdir /usr/share/gnome-shell/extensions/gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com; unzip gnome-fuzzy-app-searchgnome-shell-extensions.Czarlie.gitlab.com.v16.shell-extension.zip -d /usr/share/gnome-shell/extensions/gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com
+mkdir /usr/share/gnome-shell/extensions/gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com; unzip gnome-fuzzy-app-searchgnome-shell-extensions.Czarlie.gitlab.com.v18.shell-extension.zip -d /usr/share/gnome-shell/extensions/gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com
 chmod 644 /usr/share/gnome-shell/extensions/gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-fuzzy-app-search -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-fuzzy-app-search.txt
 # gnome-shell-extension-favourites-in-appgrid

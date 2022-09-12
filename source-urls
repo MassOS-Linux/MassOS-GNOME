@@ -1,5 +1,5 @@
 https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v42.shell-extension.zip
-https://extensions.gnome.org/extension-data/AlphabeticalAppGridstuarthayhurst.v25.shell-extension.zip
+https://extensions.gnome.org/extension-data/AlphabeticalAppGridstuarthayhurst.v26.shell-extension.zip
 https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.4.0/blueprint-compiler-v0.4.0.tar.gz
 https://ftp.acc.umu.se/pub/gnome/sources/baobab/42/baobab-42.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/cantarell-fonts/0.303/cantarell-fonts-0.303.1.tar.xz
@@ -22,7 +22,7 @@ https://extensions.gnome.org/extension-data/favourites-in-appgridharshadgavali.g
 https://ftp.acc.umu.se/pub/gnome/sources/GConf/3.2/GConf-3.2.6.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-autoar/0.4/gnome-autoar-0.4.3.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/gtk/4.6/gtk-4.6.7.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/gtk/4.8/gtk-4.8.0.tar.xz
 https://archive.massos.org/precompiled/PORTS/gjs-1.73.1-x86_64-precompiled-MassOS-2022.07-2.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-desktop/42/gnome-desktop-42.4.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-menus/3.36/gnome-menus-3.36.0.tar.xz
@@ -31,7 +31,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/grilo/0.3/grilo-0.3.15.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/grilo-plugins/0.3/grilo-plugins-0.3.15.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gfbgraph/0.2/gfbgraph-0.2.5.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gsound/1.0/gsound-1.0.3.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/gnome-bluetooth/42/gnome-bluetooth-42.3.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/gnome-bluetooth/42/gnome-bluetooth-42.4.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-session/42/gnome-session-42.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-settings-daemon/42/gnome-settings-daemon-42.2.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gssdp/1.5/gssdp-1.5.2.tar.xz
@@ -64,9 +64,9 @@ https://ftp.acc.umu.se/pub/gnome/sources/gnome-text-editor/42/gnome-text-editor-
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-characters/42/gnome-characters-42.0.tar.xz
 https://github.com/realmazharhussain/gdm-tools/archive/v1.1/gdm-tools-1.1.tar.gz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-tour/42/gnome-tour-42.0.tar.xz
-https://extensions.gnome.org/extension-data/gnome-fuzzy-app-searchgnome-shell-extensions.Czarlie.gitlab.com.v16.shell-extension.zip
+https://extensions.gnome.org/extension-data/gnome-fuzzy-app-searchgnome-shell-extensions.Czarlie.gitlab.com.v18.shell-extension.zip
 https://archive.massos.org/miscellaneous/gdm-background.png
-https://gitlab.gnome.org/nE0sIghT/gnome-browser-connector/-/archive/v42.0/gnome-browser-connector-v42.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-browser-connector/-/archive/v42.1/gnome-browser-connector-v42.1.tar.gz
 https://github.com/mjakeman/extension-manager/archive/v0.3.2/gnome-extension-manager-0.3.2.tar.gz
 https://gitlab.gnome.org/World/gnome-firmware/-/archive/42.2/gnome-firmware-42.2.tar.gz
 https://github.com/ibus/ibus/releases/download/1.5.27/ibus-1.5.27.tar.gz
@@ -76,7 +76,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/libgtop/2.40/libgtop-2.40.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libgweather/4.0/libgweather-4.0.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libadwaita/1.1/libadwaita-1.1.5.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libmediaart/1.9/libmediaart-1.9.6.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/libnma/1.8/libnma-1.8.40.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/libnma/1.10/libnma-1.10.2.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/mutter/42/mutter-42.4.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/nautilus/42/nautilus-42.2.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/rygel/0.41/rygel-0.41.2.tar.xz
