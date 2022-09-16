@@ -4,7 +4,7 @@ This document contains the changes for each release of the GNOME port. It will b
 # Current Development
 Changes:
 
-- [GNOME] Development has only just begun, check back soon!
+- [GNOME] Reimplemented the default pinned apps.
 
 Upgraded software (GNOME):
 

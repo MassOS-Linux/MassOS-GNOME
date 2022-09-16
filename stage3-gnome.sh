@@ -558,6 +558,16 @@ make install
 install -t /usr/share/licenses/ytnef -Dm644 COPYING
 cd ..
 rm -rf ytnef-2.0
+# gtksourceview5
+tar -xf gtksourceview-5.5.1.tar.xz
+cd gtksourceview-5.5.1
+mkdir build; cd build
+meson --prefix=/usr --buildtype=minsize -Dsysprof=true ..
+ninja
+ninja install
+install -t /usr/share/licenses/gtksourceview5 -Dm644 ../COPYING
+cd ../..
+rm -rf gtksourceview-5.5.1
 # Main GNOME apps.
 # Nautilus
 tar -xf nautilus-42.2.tar.xz
@@ -670,16 +680,6 @@ ninja install
 install -t /usr/share/licenses/file-roller -Dm644 ../COPYING
 cd ../..
 rm -rf file-roller-3.42.0
-# gtksourceview5
-tar -xf gtksourceview-5.5.1.tar.xz
-cd gtksourceview-5.5.1
-mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dsysprof=true ..
-ninja
-ninja install
-install -t /usr/share/licenses/gtksourceview5 -Dm644 ../COPYING
-cd ../..
-rm -rf gtksourceview-5.5.1
 # gnome-calculator
 tar -xf gnome-calculator-42.2.tar.xz
 cd gnome-calculator-42.2
@@ -923,7 +923,7 @@ set-gdm-theme set -b /usr/share/gdm/gdm-background.png
 # Customise GNOME
 cat >> /usr/share/glib-2.0/schemas/10_gnome-shell.gschema.override << "END"
 [org.gnome.shell]
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Software.desktop']
+favorite-apps=['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Software.desktop', 'org.gnome.TextEditor.desktop']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'ding@rastersoft.com', 'clipboard-indicator@tudmotu.com', 'AlphabeticalAppGrid@stuarthayhurst', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'favourites-in-appgrid@harshadgavali.gitlab.org']
 
 [org.gnome.desktop.interface]
