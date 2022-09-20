@@ -74,6 +74,7 @@ libgweather
 libadwaita
 libmediaart
 libnma-gtk4
+libshumate
 mutter
 nautilus
 rygel

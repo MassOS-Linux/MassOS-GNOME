@@ -559,6 +559,16 @@ ninja install
 install -t /usr/share/licenses/gtksourceview5 -Dm644 ../COPYING
 cd ../..
 rm -rf gtksourceview-5.6.0
+# libshumate
+tar -xf libshumate-1.0.1.tar.xz
+cd libshumate-1.0.1
+mkdir build; cd build
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false ..
+ninja
+ninja install
+install -t /usr/share/licenses/libshumate -Dm644 ../COPYING
+cd ../..
+rm -rf libshumate-1.0.1
 # Main GNOME apps.
 # Nautilus
 tar -xf nautilus-43.0.tar.xz
