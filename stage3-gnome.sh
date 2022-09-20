@@ -28,14 +28,14 @@ install -t /usr/share/licenses/totem-pl-parser -Dm644 ../COPYING.LIB
 cd ../..
 rm -rf totem-pl-parser-3.26.6
 # yelp-xsl
-tar -xf yelp-xsl-42.0.tar.xz
-cd yelp-xsl-42.0
+tar -xf yelp-xsl-42.1.tar.xz
+cd yelp-xsl-42.1
 ./configure --prefix=/usr
 make
 make install
 install -t /usr/share/licenses/yelp-xsl -Dm644 COPYING COPYING.GPL COPYING.LGPL
 cd ..
-rm -rf yelp-xsl-42.0
+rm -rf yelp-xsl-42.1
 # GConf
 tar -xf GConf-3.2.6.tar.xz
 cd GConf-3.2.6
@@ -66,15 +66,15 @@ install -t /usr/share/licenses/gnome-autoar -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-autoar-0.4.3
 # Tracker
-tar -xf tracker-3.3.3.tar.xz
-cd tracker-3.3.3
+tar -xf tracker-3.4.0.tar.xz
+cd tracker-3.4.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dman=true -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/tracker -Dm644 ../COPYING
 cd ../..
-rm -rf tracker-3.3.3
+rm -rf tracker-3.4.0
 # libgrss
 tar -xf libgrss-0.7.0.tar.xz
 cd libgrss-0.7.0
@@ -85,15 +85,15 @@ install -t /usr/share/licenses/libgrss -Dm644 COPYING
 cd ..
 rm -rf libgrss-0.7.0
 # Tracker-miners
-tar -xf tracker-miners-3.3.1.tar.xz
-cd tracker-miners-3.3.1
+tar -xf tracker-miners-3.4.0.tar.xz
+cd tracker-miners-3.4.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dman=true -Dfunctional_tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/tracker-miners -Dm644 ../COPYING ../COPYING.GPL ../COPYING.LGPL
 cd ../..
-rm -rf tracker-miners-3.3.1
+rm -rf tracker-miners-3.4.0
 # libcloudproviders
 tar -xf libcloudproviders-0.3.1.tar.gz
 cd libcloudproviders-0.3.1
@@ -105,15 +105,15 @@ install -t /usr/share/licenses/libcloudproviders -Dm644 ../LICENSE
 cd ../..
 rm -rf libcloudproviders-0.3.1
 # gtk4
-tar -xf gtk-4.8.0.tar.xz
-cd gtk-4.8.0
+tar -xf gtk-4.8.1.tar.xz
+cd gtk-4.8.1
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dx11-backend=true -Dwayland-backend=true -Dbroadway-backend=true -Dmedia-ffmpeg=enabled -Ddemos=false -Dmedia-gstreamer=enabled -Dprint-cups=enabled -Dvulkan=enabled -Dcloudproviders=enabled -Dsysprof=enabled -Dtracker=enabled -Dcolord=enabled -Dgtk_doc=false -Dman-pages=true -Dbuild-examples=false -Dbuild-tests=false -Dinstall-tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gtk4 -Dm644 ../COPYING
 cd ../..
-rm -rf gtk-4.8.0
+rm -rf gtk-4.8.1
 # JS91.
 tar -xf firefox-91.13.0esr.source.tar.xz
 cd firefox-91.13.0
@@ -133,15 +133,15 @@ cp -a gjs-1.73.1-x86_64-precompiled-MassOS-2022.07/BINARY/* /
 ldconfig
 rm -rf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07
 # gnome-desktop
-tar -xf gnome-desktop-42.4.tar.xz
-cd gnome-desktop-42.4
+tar -xf gnome-desktop-43.tar.xz
+cd gnome-desktop-43
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgnome_distributor="MassOS" -Ddebug_tools=false -Dsystemd=enabled -Dgtk_doc=false -Dinstalled_tests=false -Dbuild_gtk4=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-desktop -Dm644 ../COPYING ../COPYING-DOCS ../COPYING.LIB
 cd ../..
-rm -rf gnome-desktop-42.4
+rm -rf gnome-desktop-43
 # gnome-menus
 tar -xf gnome-menus-3.36.0.tar.xz
 cd gnome-menus-3.36.0
@@ -278,15 +278,15 @@ install -t /usr/share/licenses/zenity -Dm644 ../COPYING
 cd ../..
 rm -rf zenity-3.43.0
 # libadwaita
-tar -xf libadwaita-1.1.5.tar.xz
-cd libadwaita-1.1.5
+tar -xf libadwaita-1.2.0.tar.xz
+cd libadwaita-1.2.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dtests=false -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libadwaita -Dm644 ../COPYING
 cd ../..
-rm -rf libadwaita-1.1.5
+rm -rf libadwaita-1.2.0
 # gnome-bluetooth
 tar -xf gnome-bluetooth-42.4.tar.xz
 cd gnome-bluetooth-42.4
@@ -309,15 +309,15 @@ install -t /usr/share/licenses/gnome-session -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-session-42.0
 # gnome-settings-daemon
-tar -xf gnome-settings-daemon-42.2.tar.xz
-cd gnome-settings-daemon-42.2
+tar -xf gnome-settings-daemon-43.0.tar.xz
+cd gnome-settings-daemon-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dsystemd=true -Dalsa=true -Dgudev=true -Dcups=true -Dnetwork_manager=true -Drfkill=true -Dsmartcard=true -Dusb-protection=true -Dwayland=true -Dwwan=true -Dcolord=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-settings-daemon -Dm644 ../COPYING ../COPYING.LIB
 cd ../..
-rm -rf gnome-settings-daemon-42.2
+rm -rf gnome-settings-daemon-43.0
 # libnma-gtk4
 tar -xf libnma-1.10.2.tar.xz
 cd libnma-1.10.2
@@ -360,25 +360,25 @@ install -t /usr/share/licenses/cups-pk-helper -Dm644 ../COPYING
 cd ../..
 rm -rf cups-pk-helper-0.2.7
 # gssdp
-tar -xf gssdp-1.5.2.tar.xz
-cd gssdp-1.5.2
+tar -xf gssdp-1.6.0.tar.xz
+cd gssdp-1.6.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gssdp -Dm644 ../COPYING
 cd ../..
-rm -rf gssdp-1.5.2
+rm -rf gssdp-1.6.0
 # gupnp
-tar -xf gupnp-1.5.4.tar.xz
-cd gupnp-1.5.4
+tar -xf gupnp-1.6.0
+cd gupnp-1.6.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gupnp -Dm644 ../COPYING
 cd ../..
-rm -rf gupnp-1.5.4
+rm -rf gupnp-1.6.0
 # gupnp-av
 tar -xf gupnp-av-0.14.1.tar.xz
 cd gupnp-av-0.14.1
@@ -420,35 +420,35 @@ install -t /usr/share/licenses/libmediaart -Dm644 ../COPYING ../COPYING.LESSER
 cd ../..
 rm -rf libmediaart-1.9.6
 # rygel
-tar -xf rygel-0.41.2.tar.xz
-cd rygel-0.41.2
+tar -xf rygel-0.42.0.tar.xz
+cd rygel-0.42.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dexamples=false -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/rygel -Dm644 ../COPYING ../COPYING.logo
 cd ../..
-rm -rf rygel-0.41.2
+rm -rf rygel-0.42.0
 # gnome-control-center
-tar -xf gnome-control-center-42.3.tar.xz
-cd gnome-control-center-42.3
+tar -xf gnome-control-center-43.0.tar.xz
+cd gnome-control-center-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocumentation=false -Dibus=true -Dtests=false -Dwayland=true -Dmalcontent=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-control-center -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-control-center-42.3
+rm -rf gnome-control-center-43.0
 # Mutter
-tar -xf mutter-42.4.tar.xz
-cd mutter-42.4
+tar -xf mutter-43.0.tar.xz
+cd mutter-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dtests=false -Dinstalled_tests=false -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/mutter -Dm644 ../COPYING
 cd ../..
-rm -rf mutter-42.4
+rm -rf mutter-43.0
 # GDM
 groupadd -g 67 gdm
 useradd -c "GDM Daemon" -d /var/lib/gdm -u 67 -g gdm -s /bin/false gdm
@@ -471,34 +471,34 @@ install -t /usr/share/licenses/telepathy-mission-control -Dm644 COPYING
 cd ..
 rm -rf telepathy-mission-control-5.16.6
 # gnome-shell
-tar -xf gnome-shell-42.4.tar.xz
-cd gnome-shell-42.4
+tar -xf gnome-shell-43.0.tar.xz
+cd gnome-shell-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dextensions_tool=true -Dextensions_app=false -Dgtk_doc=false -Dman=true -Dtests=false -Dnetworkmanager=true -Dsystemd=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-shell -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-shell-42.4
+rm -rf gnome-shell-43.0
 # gnome-shell-extensions
-tar -xf gnome-shell-extensions-42.3.tar.xz
-cd gnome-shell-extensions-42.3
+tar -xf gnome-shell-extensions-43.0.tar.xz
+cd gnome-shell-extensions-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-shell-extensions -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-shell-extensions-42.3
+rm -rf gnome-shell-extensions-43.0
 # gnome-user-docs
-tar -xf gnome-user-docs-42.0.tar.xz
-cd gnome-user-docs-42.0
+tar -xf gnome-user-docs-43.0.tar.xz
+cd gnome-user-docs-43.0
 ./configure --prefix=/usr
 make
 make install
 install -t /usr/share/licenses/gnome-user-docs -Dm644 COPYING
 cd ..
-rm -rf gnome-user-docs-42.0
+rm -rf gnome-user-docs-43.0
 # gnome-browser-connector
 tar -xf gnome-browser-connector-v42.1.tar.gz
 cd gnome-browser-connector-v42.1
@@ -559,26 +559,26 @@ install -t /usr/share/licenses/ytnef -Dm644 COPYING
 cd ..
 rm -rf ytnef-2.0
 # gtksourceview5
-tar -xf gtksourceview-5.5.1.tar.xz
-cd gtksourceview-5.5.1
+tar -xf gtksourceview-5.6.0.tar.xz
+cd gtksourceview-5.6.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dsysprof=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gtksourceview5 -Dm644 ../COPYING
 cd ../..
-rm -rf gtksourceview-5.5.1
+rm -rf gtksourceview-5.6.0
 # Main GNOME apps.
 # Nautilus
-tar -xf nautilus-42.2.tar.xz
-cd nautilus-42.2
+tar -xf nautilus-43.0.tar.xz
+cd nautilus-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dextensions=true -Dlibportal=true -Dpackagekit=false -Dselinux=false -Dtests=none ..
 ninja
 ninja install
 install -t /usr/share/licenses/nautilus -Dm644 ../LICENSE
 cd ../..
-rm -rf nautilus-42.2
+rm -rf nautilus-43.0
 # Geary
 tar -xf geary-40.0.tar.xz
 cd geary-40.0
@@ -601,15 +601,15 @@ install -t /usr/share/licenses/gnome-music -Dm644 ../LICENSE
 cd ../..
 rm -rf gnome-music-42.1
 # gnome-calendar
-tar -xf gnome-calendar-42.2.tar.xz
-cd gnome-calendar-42.2
+tar -xf gnome-calendar-43.0.tar.xz
+cd gnome-calendar-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-calendar -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-calendar-42.2
+rm -rf gnome-calendar-43.0
 # gnome-extension-manager
 tar -xf gnome-extension-manager-0.3.2.tar.gz
 cd extension-manager-0.3.2
@@ -622,24 +622,24 @@ install -t /usr/share/licenses/gnome-extension-manager -Dm644 ../COPYING
 cd ../..
 rm -rf extension-manager-0.3.2
 # Yelp
-tar -xf yelp-42.1.tar.xz
-cd yelp-42.1
+tar -xf yelp-42.2.tar.xz
+cd yelp-42.2
 ./configure --prefix=/usr --disable-static --with-webkit2gtk-4-0
 make
 make install
 install -t /usr/share/licenses/yelp -Dm644 COPYING
 cd ..
-rm -rf yelp-42.1
+rm -rf yelp-42.2
 # Baobab
-tar -xf baobab-42.0.tar.xz
-cd baobab-42.0
+tar -xf baobab-43.0.tar.xz
+cd baobab-43.0
 mkdir baobab-build; cd baobab-build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/baobab -Dm644 ../COPYING ../COPYING.docs
 cd ../..
-rm -rf baobab-42.0
+rm -rf baobab-43.0
 # Cheese
 tar -xf cheese-41.1.tar.xz
 cd cheese-41.1
@@ -651,45 +651,45 @@ install -t /usr/share/licenses/cheese -Dm644 ../COPYING
 cd ../..
 rm -rf cheese-41.1
 # EOG
-tar -xf eog-42.3.tar.xz
-cd eog-42.3
+tar -xf eog-43.0.tar.xz
+cd eog-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dinstalled_tests=false -Dlibportal=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/eog -Dm644 ../COPYING
 cd ../..
-rm -rf eog-42.3
+rm -rf eog-43.0
 # Evince.
-tar -xf evince-42.3.tar.xz
-cd evince-42.3
+tar -xf evince-43.0.tar.xz
+cd evince-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dnautilus=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/evince -Dm644 ../COPYING
 cd ../..
-rm -rf evince-42.3
+rm -rf evince-43.0
 # File-roller
-tar -xf file-roller-3.42.0.tar.xz
-cd file-roller-3.42.0
+tar -xf file-roller-43.0.tar.xz
+cd file-roller-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dpackagekit=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/file-roller -Dm644 ../COPYING
 cd ../..
-rm -rf file-roller-3.42.0
+rm -rf file-roller-43.0
 # gnome-calculator
-tar -xf gnome-calculator-42.2.tar.xz
-cd gnome-calculator-42.2
+tar -xf gnome-calculator-43.0.1.tar.xz
+cd gnome-calculator-43.0.1
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-calculator -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-calculator-42.2
+rm -rf gnome-calculator-43.0.1
 # gnome-color-manager
 tar -xf gnome-color-manager-3.36.0.tar.xz
 cd gnome-color-manager-3.36.0
@@ -701,25 +701,25 @@ install -t /usr/share/licenses/gnome-color-manager -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-color-manager-3.36.0
 # gnome-disk-utility
-tar -xf gnome-disk-utility-42.0.tar.xz
-cd gnome-disk-utility-42.0
+tar -xf gnome-disk-utility-43.0.tar.xz
+cd gnome-disk-utility-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dlogind=libsystemd -Dgsd_plugin=true -Dman=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-disk-utility -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-disk-utility-42.0
+rm -rf gnome-disk-utility-43.0
 # gnome-maps
-tar -xf gnome-maps-42.3.tar.xz
-cd gnome-maps-42.3
+tar -xf gnome-maps-43.0.tar.xz
+cd gnome-maps-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-maps -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-maps-42.3
+rm -rf gnome-maps-43.0
 # gnome-screenshot
 tar -xf gnome-screenshot-41.0.tar.xz
 cd gnome-screenshot-41.0
@@ -762,15 +762,15 @@ install -t /usr/share/licenses/gnome-tweaks -Dm644 ../LICENSES/*
 cd ../..
 rm -rf gnome-tweaks-42.beta
 # gnome-weather
-tar -xf gnome-weather-42.0.tar.xz
-cd gnome-weather-42.0
+tar -xf gnome-weather-43.0.tar.xz
+cd gnome-weather-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-weather -Dm644 ../COPYING.md
 cd ../..
-rm -rf gnome-weather-42.0
+rm -rf gnome-weather-43.0
 # Seahorse
 tar -xf seahorse-42.0.tar.xz
 cd seahorse-42.0
@@ -792,55 +792,55 @@ install -t /usr/share/licenses/gparted -Dm644 COPYING
 cd ..
 rm -rf gparted-GPARTED_1_4_0
 # GNOME Software.
-tar -xf gnome-software-42.4.tar.xz
-cd gnome-software-42.4
+tar -xf gnome-software-43.0.tar.xz
+cd gnome-software-43.0
 mkdir gnome-software-build; cd gnome-software-build
 meson --prefix=/usr --buildtype=minsize -Dpackagekit=false -Dtests=false -Dvalgrind=false -Dsoup2=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-software -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-software-42.4
+rm -rf gnome-software-43.0
 # totem
-tar -xf totem-42.0.tar.xz
-cd totem-42.0
+tar -xf totem-43.0.tar.xz
+cd totem-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dhelp=true -Denable-easy-codec-installation=yes -Denable-python=yes -Dwith-plugins=auto -Denable-gtk-doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/totem -Dm644 ../COPYING
 cd ../..
-rm -rf totem-42.0
+rm -rf totem-43.0
 # gnome-text-editor
-tar -xf gnome-text-editor-42.2.tar.xz
-cd gnome-text-editor-42.2
+tar -xf gnome-text-editor-43.0.tar.xz
+cd gnome-text-editor-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-text-editor -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-text-editor-42.2
+rm -rf gnome-text-editor-43.0
 # gnome-characters
-tar -xf gnome-characters-42.0.tar.xz
-cd gnome-characters-42.0
+tar -xf gnome-characters-43.0.tar.xz
+cd gnome-characters-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dinstalled_tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-characters -Dm644 ../COPYING ../COPYINGv2
 cd ../..
-rm -rf gnome-characters-42.0
+rm -rf gnome-characters-43.0
 # gnome-firmware
-tar -xf gnome-firmware-42.2.tar.gz
-cd gnome-firmware-42.2
+tar -xf gnome-firmware-43.0.tar.gz
+cd gnome-firmware-43.0
 mkdir gnome-firmware-build; cd gnome-firmware-build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-firmware -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-firmware-42.2
+rm -rf gnome-firmware-43.0
 # gdm-tools
 tar -xf gdm-tools-1.1.tar.gz
 cd gdm-tools-1.1
@@ -865,14 +865,16 @@ rm -rf gnome-tour-42.0
 mkdir /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com; unzip appindicatorsupportrgcjonas.gmail.com.v42.shell-extension.zip -d /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
 chmod 644 /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-appindicator -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-appindicator.txt
-# gnome-shell-extension-desktop-icons-ng
-mkdir /usr/share/gnome-shell/extensions/ding@rastersoft.com; unzip dingrastersoft.com.v46.shell-extension.zip -d /usr/share/gnome-shell/extensions/ding@rastersoft.com
-chmod 644 /usr/share/gnome-shell/extensions/ding@rastersoft.com/metadata.json
-install -t /usr/share/licenses/gnome-shell-extension-desktop-icons-ng -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-desktop-icons-ng.txt
+sed -e 's|"42"|"43"|' -i /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/metadata.json
+# gnome-shell-extension-desktop-icons-ng-gtk4
+mkdir /usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com; unzip gtk4-dingsmedius.gitlab.com.v7.shell-extension.zip -d /usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com
+chmod 644 /usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/metadata.json
+install -t /usr/share/licenses/gnome-shell-extension-desktop-icons-ng-gtk4 -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-desktop-icons-ng-gtk4.txt
 # gnome-shell-extension-clipboard-indicator
 mkdir /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com; unzip clipboard-indicatortudmotu.com.v42.shell-extension.zip -d /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
 chmod 644 /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-clipboard-indicator -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-clipboard-indicator.txt
+sed -e 's|"42"|"43"|' -i /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com/metadata.json
 # gnome-shell-extension-alphabetical-grid-extension
 mkdir /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst; unzip AlphabeticalAppGridstuarthayhurst.v26.shell-extension.zip -d /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst
 chmod 644 /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst/metadata.json
@@ -885,6 +887,7 @@ install -t /usr/share/licenses/gnome-shell-extension-fuzzy-app-search -Dm644 ext
 mkdir /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org; unzip favourites-in-appgridharshadgavali.gitlab.org.v2.shell-extension.zip -d /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org
 chmod 644 /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-favourites-in-appgrid -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-favourites-in-appgrid.txt
+sed -e 's|"42"|"43"|' -i /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org/metadata.json
 # Set default wallpaper
 ln -sf xfce /usr/share/backgrounds/gnome
 # Set GNOME Static wallpapers
@@ -924,7 +927,7 @@ set-gdm-theme set -b /usr/share/gdm/gdm-background.png
 cat >> /usr/share/glib-2.0/schemas/10_gnome-shell.gschema.override << "END"
 [org.gnome.shell]
 favorite-apps=['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Software.desktop', 'org.gnome.TextEditor.desktop']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'ding@rastersoft.com', 'clipboard-indicator@tudmotu.com', 'AlphabeticalAppGrid@stuarthayhurst', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'favourites-in-appgrid@harshadgavali.gitlab.org']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gtk4-ding@smedius.gitlab.com', 'clipboard-indicator@tudmotu.com', 'AlphabeticalAppGrid@stuarthayhurst', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'favourites-in-appgrid@harshadgavali.gitlab.org']
 
 [org.gnome.desktop.interface]
 color-scheme='prefer-dark'

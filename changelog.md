@@ -5,18 +5,50 @@ This document contains the changes for each release of the GNOME port. It will b
 Changes:
 
 - [GNOME] Reimplemented the default pinned apps.
+- [GNOME] Switched to the GTK4 port of the desktop icons GNOME extension.
+- [GNOME] Upgraded most GNOME components to 43.
 
 Upgraded software (GNOME):
 
 - blueprint-compiler: `0.2.0 --> 0.4.0`
+- baobab: `42.0 --> 43.0`
+- eog: `42.3 --> 43.0`
+- evince: `42.3 --> 43.0`
+- file-roller: `3.42.0 --> 43.0`
 - gupnp: `1.5.3 --> 1.5.4`
 - gnome-shell-extension-alphabetical-grid-extension: `25 --> 26`
-- gtk4: `4.6.7 --> 4.8.0`
+- gtk4: `4.6.7 --> 4.8.1`
 - gnome-bluetooth: `42.3 --> 42.4`
 - gnome-shell-extension-fuzzy-app-search: `16 --> 18`
 - gnome-browser-connector: `42.0 --> 42.1`
-- libadwaita: `1.1.4 --> 1.1.5`
+- gnome-desktop: `42.4 --> 43`
+- gnome-settings-daemon: `42.2 --> 43.0`
+- gssdp: `1.5.2 --> 1.6.0`
+- gupnp: `1.5.4 --> 1.6.0`
+- gnome-control-center: `42.3 --> 43.0`
+- gnome-shell: `42.4 --> 43.0`
+- gnome-shell-extensions: `42.3 --> 43.0`
+- gnome-user-docs: `42.0 --> 43.0`
+- gnome-calendar: `42.2 --> 43.0`
+- gtksourceview5: `5.5.1 --> 5.6.0`
+- gnome-calculator: `42.2 --> 43.0.1`
+- gnome-disk-utility: `42.0 --> 43.0`
+- gnome-maps: `42.3 --> 43.0`
+- gnome-weather: `42.0 --> 43.0`
+- gnome-software: `42.4 --> 43.0`
+- gnome-text-editor: `42.2 --> 43.0`
+- gnome-characters: `42.0 --> 43.0`
+- gnome-firmware: `42.2 --> 43.0`
+- libadwaita: `1.1.4 --> 1.2.0`
 - libnma-gtk4: `1.8.40 --> 1.10.2`
+- mutter: `42.4 --> 43.0`
+- nautilus: `42.2 --> 43.0`
+- rygel: `0.41.2 --> 0.42.0`
+- tracker: `3.3.3 --> 3.4.0`
+- tracker-miners: `3.3.1 --> 3.4.0`
+- totem: `42.0 --> 43.0`
+- yelp-xsl: `42.0 --> 42.1`
+- yelp: `42.1 --> 42.2`
 
 # MassOS 2022.09
 Changes:
