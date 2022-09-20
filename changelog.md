@@ -6,7 +6,7 @@ Changes:
 
 - [GNOME] Reimplemented the default pinned apps.
 - [GNOME] Switched to the GTK4 port of the desktop icons GNOME extension.
-- [GNOME] Upgraded most GNOME components to 43.
+- [GNOME] Upgraded to GNOME 43.
 
 Upgraded software (GNOME):
 
