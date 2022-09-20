@@ -229,15 +229,6 @@ ninja install
 install -t /usr/share/licenses/folks -Dm644 ../COPYING
 cd ../..
 rm -rf folks-0.15.5
-# gfbgraph
-tar -xf gfbgraph-0.2.5.tar.xz
-cd gfbgraph-0.2.5
-./configure --prefix=/usr --disable-static
-make
-make install
-install -t /usr/share/licenses/gfbgraph -Dm644 COPYING
-cd ..
-rm -rf gfbgraph-0.2.5
 # GSound
 tar -xf gsound-1.0.3.tar.xz
 cd gsound-1.0.3
