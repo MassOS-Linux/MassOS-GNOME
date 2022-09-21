@@ -9,6 +9,7 @@ evolution-data-server
 exempi
 eog
 evince
+editorconfig-core-c
 folks
 file-roller
 firefox
@@ -25,6 +26,7 @@ grilo-plugins
 gsound
 gnome-bluetooth
 gnome-session
+gcr4
 gnome-settings-daemon
 gssdp
 gupnp
@@ -75,10 +77,13 @@ libadwaita
 libmediaart
 libnma-gtk4
 libshumate
+libportal-gtk4
+libdazzle
 mutter
 nautilus
 rygel
 seahorse
+sysprof
 totem-pl-parser
 tracker
 tracker-miners

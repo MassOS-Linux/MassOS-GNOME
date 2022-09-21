@@ -136,7 +136,7 @@ rm -rf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07
 tar -xf gnome-desktop-43.tar.xz
 cd gnome-desktop-43
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dgnome_distributor="MassOS" -Ddebug_tools=false -Dsystemd=enabled -Dgtk_doc=false -Dinstalled_tests=false -Dbuild_gtk4=true ..
+meson --prefix=/usr --buildtype=minsize -Ddebug_tools=false -Dsystemd=enabled -Dgtk_doc=false -Dinstalled_tests=false -Dbuild_gtk4=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-desktop -Dm644 ../COPYING ../COPYING-DOCS ../COPYING.LIB
@@ -194,7 +194,7 @@ rm -rf libgtop-2.40.0
 tar -xf libgweather-4.0.0.tar.xz
 cd libgweather-4.0.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dtests=false ..
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dtests=false -Dsoup2=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libgweather -Dm644 ../COPYING
@@ -262,7 +262,7 @@ rm -rf exempi-2.6.2
 tar -xf zenity-3.43.0.tar.xz
 cd zenity-3.43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dlibnotify=true ..
+meson --prefix=/usr --buildtype=minsize -Dlibnotify=true -Dwebkitgtk=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/zenity -Dm644 ../COPYING
@@ -299,6 +299,16 @@ ninja install
 install -t /usr/share/licenses/gnome-session -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-session-42.0
+# gcr4
+tar -xf gcr-3.92.0.tar.xz
+cd gcr-3.92.0
+mkdir build; cd build
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false ..
+ninja
+ninja install
+install -t /usr/share/licenses/gcr4 -Dm644 ../COPYING
+cd ../..
+rm -rf gcr-3.92.0
 # gnome-settings-daemon
 tar -xf gnome-settings-daemon-43.0.tar.xz
 cd gnome-settings-daemon-43.0
@@ -361,7 +371,7 @@ install -t /usr/share/licenses/gssdp -Dm644 ../COPYING
 cd ../..
 rm -rf gssdp-1.6.0
 # gupnp
-tar -xf gupnp-1.6.0
+tar -xf gupnp-1.6.0.tar.xz
 cd gupnp-1.6.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dexamples=false ..
@@ -430,6 +440,26 @@ ninja install
 install -t /usr/share/licenses/gnome-control-center -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-control-center-43.0
+# libdazzle.
+tar -xf libdazzle-3.44.0.tar.xz
+cd libdazzle-3.44.0
+mkdir DAZZLE-build; cd DAZZLE-build
+meson --prefix=/usr --buildtype=minsize ..
+ninja
+ninja install
+install -t /usr/share/licenses/libdazzle -Dm644 ../COPYING
+cd ../..
+rm -rf libdazzle-3.44.0
+# Sysprof.
+tar -xf sysprof-3.46.0.tar.xz
+cd sysprof-3.46.0
+mkdir SYSPROF-build; cd SYSPROF-build
+meson --prefix=/usr --buildtype=minsize ..
+ninja
+ninja install
+install -t /usr/share/licenses/sysprof -Dm644 ../COPYING ../COPYING.gpl-2
+cd ../..
+rm -rf sysprof-3.46.0
 # Mutter
 tar -xf mutter-43.0.tar.xz
 cd mutter-43.0
@@ -569,6 +599,26 @@ ninja install
 install -t /usr/share/licenses/libshumate -Dm644 ../COPYING
 cd ../..
 rm -rf libshumate-1.0.1
+# libportal-gtk4.
+tar -xf libportal-0.6.tar.xz
+cd libportal-0.6
+mkdir portal-build; cd portal-build
+meson --prefix=/usr --buildtype=minsize -Dbackends=gtk4 -Ddocs=false -Dtests=false ..
+ninja
+ninja install
+install -t /usr/share/licenses/libportal-gtk4 -Dm644 ../COPYING
+cd ../..
+rm -rf libportal-0.6
+# editorconfig-core-c
+tar -xf editorconfig-core-c-0.12.5.tar.gz
+cd editorconfig-core-c-0.12.5
+mkdir build; cd build
+cmake -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_DOCUMENTATION=OFF -Wno-dev -G Ninja ..
+ninja 
+ninja install
+install -t /usr/share/licenses/editorconfig-core-c -Dm644 ../LICENSE
+cd ../..
+rm -rf editorconfig-core-c-0.12.5
 # Main GNOME apps.
 # Nautilus
 tar -xf nautilus-43.0.tar.xz
@@ -625,7 +675,7 @@ rm -rf extension-manager-0.3.2
 # Yelp
 tar -xf yelp-42.2.tar.xz
 cd yelp-42.2
-./configure --prefix=/usr --disable-static --with-webkit2gtk-4-0
+./configure --prefix=/usr --disable-static
 make
 make install
 install -t /usr/share/licenses/yelp -Dm644 COPYING
@@ -642,15 +692,15 @@ install -t /usr/share/licenses/baobab -Dm644 ../COPYING ../COPYING.docs
 cd ../..
 rm -rf baobab-43.0
 # Cheese
-tar -xf cheese-41.1.tar.xz
-cd cheese-41.1
+tar -xf cheese-43.alpha.tar.xz
+cd cheese-43.alpha
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dtests=false -Dgtk_doc=false -Dman=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/cheese -Dm644 ../COPYING
 cd ../..
-rm -rf cheese-41.1
+rm -rf cheese-43.alpha
 # EOG
 tar -xf eog-43.0.tar.xz
 cd eog-43.0
@@ -665,7 +715,7 @@ rm -rf eog-43.0
 tar -xf evince-43.0.tar.xz
 cd evince-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dnautilus=true ..
+meson --prefix=/usr --buildtype=minsize -Dnautilus=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/evince -Dm644 ../COPYING
@@ -743,15 +793,15 @@ install -t /usr/share/licenses/gnome-system-monitor -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-system-monitor-42.0
 # gnome-terminal
-tar -xf gnome-terminal-3.44.1.tar.xz
-cd gnome-terminal-3.44.1
+tar -xf gnome-terminal-3.46.1.tar.bz2
+cd gnome-terminal-3.46.1
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-terminal -Dm644 ../COPYING ../COPYING.GFDL
 cd ../..
-rm -rf gnome-terminal-3.44.1
+rm -rf gnome-terminal-3.46.1
 # gnome-tweaks
 tar -xf gnome-tweaks-42.beta.tar.xz
 cd gnome-tweaks-42.beta
@@ -796,7 +846,7 @@ rm -rf gparted-GPARTED_1_4_0
 tar -xf gnome-software-43.0.tar.xz
 cd gnome-software-43.0
 mkdir gnome-software-build; cd gnome-software-build
-meson --prefix=/usr --buildtype=minsize -Dpackagekit=false -Dtests=false -Dvalgrind=false -Dsoup2=true ..
+meson --prefix=/usr --buildtype=minsize -Dpackagekit=false -Dtests=false -Dsoup2=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-software -Dm644 ../COPYING
@@ -983,7 +1033,7 @@ dconf update
 glib-compile-schemas /usr/share/glib-2.0/schemas
 systemctl enable gdm
 # Firefox.
-tar --no-same-owner -xf firefox-104.0.1.tar.bz2 -C /usr/lib
+tar --no-same-owner -xf firefox-105.0.tar.bz2 -C /usr/lib
 mkdir -p /usr/lib/firefox/distribution
 cat > /usr/lib/firefox/distribution/policies.json << END
 {

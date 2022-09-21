@@ -6,7 +6,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/cantarell-fonts/0.303/cantarell-fonts-0
 https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.0.tar.xz
 https://archive.massos.org/miscellaneous/Cantarell-VF.otf
 https://www.freedesktop.org/software/cups-pk-helper/releases/cups-pk-helper-0.2.7.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/cheese/41/cheese-41.1.tar.xz
+https://mirror.accum.se/pub/gnome/sources/cheese/43/cheese-43.alpha.tar.xz
 https://extensions.gnome.org/extension-data/clipboard-indicatortudmotu.com.v42.shell-extension.zip
 https://ftp.acc.umu.se/pub/gnome/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v7.shell-extension.zip
@@ -14,10 +14,11 @@ https://ftp.acc.umu.se/pub/gnome/sources/evolution-data-server/3.44/evolution-da
 https://libopenraw.freedesktop.org/download/exempi-2.6.2.tar.bz2
 https://ftp.acc.umu.se/pub/gnome/sources/eog/43/eog-43.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/evince/43/evince-43.0.tar.xz
+https://github.com/editorconfig/editorconfig-core-c/archive/v0.12.5/editorconfig-core-c-0.12.5.tar.gz
 https://ftp.acc.umu.se/pub/gnome/sources/folks/0.15/folks-0.15.5.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/file-roller/43/file-roller-43.0.tar.xz
 https://archive.mozilla.org/pub/firefox/releases/91.13.0esr/source/firefox-91.13.0esr.source.tar.xz
-https://archive.mozilla.org/pub/firefox/releases/104.0.1/linux-x86_64/en-US/firefox-104.0.1.tar.bz2
+https://archive.mozilla.org/pub/firefox/releases/105.0/linux-x86_64/en-US/firefox-105.0.tar.bz2
 https://extensions.gnome.org/extension-data/favourites-in-appgridharshadgavali.gitlab.org.v2.shell-extension.zip
 https://ftp.acc.umu.se/pub/gnome/sources/GConf/3.2/GConf-3.2.6.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
@@ -32,6 +33,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/grilo-plugins/0.3/grilo-plugins-0.3.15.
 https://ftp.acc.umu.se/pub/gnome/sources/gsound/1.0/gsound-1.0.3.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-bluetooth/42/gnome-bluetooth-42.4.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-session/42/gnome-session-42.0.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/gcr/3.92/gcr-3.92.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-settings-daemon/43/gnome-settings-daemon-43.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gssdp/1.6/gssdp-1.6.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gupnp/1.6/gupnp-1.6.0.tar.xz
@@ -54,7 +56,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/gnome-disk-utility/43/gnome-disk-utilit
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-maps/43/gnome-maps-43.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-screenshot/41/gnome-screenshot-41.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-system-monitor/42/gnome-system-monitor-42.0.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/gnome-terminal/3.44/gnome-terminal-3.44.1.tar.xz
+https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.46.1/gnome-terminal-3.46.1.tar.bz2
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-tweaks/42/gnome-tweaks-42.beta.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-weather/43/gnome-weather-43.0.tar.xz
 https://gitlab.gnome.org/GNOME/gparted/-/archive/GPARTED_1_4_0/gparted-GPARTED_1_4_0.tar.bz2
@@ -77,10 +79,13 @@ https://ftp.acc.umu.se/pub/gnome/sources/libadwaita/1.2/libadwaita-1.2.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libmediaart/1.9/libmediaart-1.9.6.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libnma/1.10/libnma-1.10.2.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libshumate/1.0/libshumate-1.0.1.tar.xz
+https://github.com/flatpak/libportal/releases/download/0.6/libportal-0.6.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/libdazzle/3.44/libdazzle-3.44.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/mutter/43/mutter-43.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/nautilus/43/nautilus-43.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/rygel/0.42/rygel-0.42.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/seahorse/42/seahorse-42.0.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/sysprof/3.46/sysprof-3.46.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/totem-pl-parser/3.26/totem-pl-parser-3.26.6.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/tracker/3.4/tracker-3.4.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/tracker-miners/3.4/tracker-miners-3.4.0.tar.xz

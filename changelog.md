@@ -7,14 +7,17 @@ Changes:
 - [GNOME] Reimplemented the default pinned apps.
 - [GNOME] Switched to the GTK4 port of the desktop icons GNOME extension.
 - [GNOME] Upgraded to GNOME 43.
+- [GNOME] Added Sysprof main GTK4/libadwaita application from MassOS's core system.
 
 Upgraded software (GNOME):
 
 - blueprint-compiler: `0.2.0 --> 0.4.0`
 - baobab: `42.0 --> 43.0`
+- cheese: `41.1 --> 43.alpha`
 - eog: `42.3 --> 43.0`
 - evince: `42.3 --> 43.0`
 - file-roller: `3.42.0 --> 43.0`
+- Firefox: `104.0.1 --> 105.0`
 - gupnp: `1.5.3 --> 1.5.4`
 - gnome-shell-extension-alphabetical-grid-extension: `25 --> 26`
 - gtk4: `4.6.7 --> 4.8.1`
@@ -39,6 +42,7 @@ Upgraded software (GNOME):
 - gnome-text-editor: `42.2 --> 43.0`
 - gnome-characters: `42.0 --> 43.0`
 - gnome-firmware: `42.2 --> 43.0`
+- gnome-terminal: `3.44.1 --> 3.46.1`
 - libadwaita: `1.1.4 --> 1.2.0`
 - libnma-gtk4: `1.8.40 --> 1.10.2`
 - mutter: `42.4 --> 43.0`
