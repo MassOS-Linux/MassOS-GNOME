@@ -191,15 +191,15 @@ install -t /usr/share/licenses/libgtop -Dm644 COPYING copyright.txt
 cd ..
 rm -rf libgtop-2.40.0
 # libgweather
-tar -xf libgweather-4.0.0.tar.xz
-cd libgweather-4.0.0
+tar -xf libgweather-4.2.0.tar.xz
+cd libgweather-4.2.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dtests=false -Dsoup2=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libgweather -Dm644 ../COPYING
 cd ../..
-rm -rf libgweather-4.0.0
+rm -rf libgweather-4.2.0
 # evolution-data-server
 tar -xf evolution-data-server-3.44.4.tar.xz
 cd evolution-data-server-3.44.4

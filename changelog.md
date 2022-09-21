@@ -45,6 +45,7 @@ Upgraded software (GNOME):
 - gnome-terminal: `3.44.1 --> 3.46.1`
 - libadwaita: `1.1.4 --> 1.2.0`
 - libnma-gtk4: `1.8.40 --> 1.10.2`
+- libgweather: `4.0.0 --> 4.2.0`
 - mutter: `42.4 --> 43.0`
 - nautilus: `42.2 --> 43.0`
 - rygel: `0.41.2 --> 0.42.0`
