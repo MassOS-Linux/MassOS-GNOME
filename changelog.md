@@ -16,6 +16,7 @@ Upgraded software (GNOME):
 - cheese: `41.1 --> 43.alpha`
 - eog: `42.3 --> 43.0`
 - evince: `42.3 --> 43.0`
+- evolution-data-server: `3.44.4 --> 3.46.0`
 - file-roller: `3.42.0 --> 43.0`
 - Firefox: `104.0.1 --> 105.0`
 - gupnp: `1.5.3 --> 1.5.4`

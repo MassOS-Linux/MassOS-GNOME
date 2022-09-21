@@ -201,15 +201,15 @@ install -t /usr/share/licenses/libgweather -Dm644 ../COPYING
 cd ../..
 rm -rf libgweather-4.2.0
 # evolution-data-server
-tar -xf evolution-data-server-3.44.4.tar.xz
-cd evolution-data-server-3.44.4
+tar -xf evolution-data-server-3.46.0.tar.xz
+cd evolution-data-server-3.46.0
 mkdir build; cd build
-cmake -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DENABLE_VALA_BINDINGS=ON -DENABLE_INSTALLED_TESTS=OFF -DENABLE_GOOGLE=ON -DWITH_OPENLDAP=ON -DWITH_KRB5=ON -DENABLE_INTROSPECTION=ON -DENABLE_GTK_DOC=OFF -DWITH_LIBDB=ON -DWITH_GWEATHER4=ON -DWITH_SYSTEMDUSERUNITDIR=yes -DENABLE_EXAMPLES=OFF -Wno-dev -G Ninja ..
+cmake -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DENABLE_VALA_BINDINGS=ON -DENABLE_INSTALLED_TESTS=OFF -DENABLE_GOOGLE=ON -DWITH_OPENLDAP=ON -DWITH_KRB5=ON -DENABLE_INTROSPECTION=ON -DENABLE_GTK_DOC=OFF -DWITH_LIBDB=ON -DWITH_GWEATHER4=ON -DWITH_SYSTEMDUSERUNITDIR=yes -DENABLE_EXAMPLES=OFF -DENABLE_OAUTH2_WEBKITGTK=ON -DENABLE_OAUTH2_WEBKITGTK4=OFF -Wno-dev -G Ninja ..
 ninja
 ninja install
 install -t /usr/share/licenses/evolution-data-server -Dm644 ../COPYING
 cd ../..
-rm -rf evolution-data-server-3.44.4
+rm -rf evolution-data-server-3.46.0
 # telepathy-glib
 tar -xf telepathy-glib-0.24.2.tar.gz
 cd telepathy-glib-0.24.2
@@ -624,7 +624,7 @@ rm -rf editorconfig-core-c-0.12.5
 tar -xf nautilus-43.0.tar.xz
 cd nautilus-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dextensions=true -Dlibportal=true -Dpackagekit=false -Dselinux=false -Dtests=none ..
+meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dextensions=true -Dpackagekit=false -Dselinux=false -Dtests=none ..
 ninja
 ninja install
 install -t /usr/share/licenses/nautilus -Dm644 ../LICENSE
@@ -634,6 +634,7 @@ rm -rf nautilus-43.0
 tar -xf geary-40.0.tar.xz
 cd geary-40.0
 patch -Np1 -i ../patches/geary-40.0-upstreamfix.patch
+sed -i 's/-4.0/-4.1/' meson.build
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dprofile=release ..
 ninja
