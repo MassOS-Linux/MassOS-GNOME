@@ -7,7 +7,6 @@ https://www.freedesktop.org/software/colord/releases/colord-gtk-0.3.0.tar.xz
 https://archive.massos.org/miscellaneous/Cantarell-VF.otf
 https://www.freedesktop.org/software/cups-pk-helper/releases/cups-pk-helper-0.2.7.tar.xz
 https://mirror.accum.se/pub/gnome/sources/cheese/43/cheese-43.alpha.tar.xz
-https://extensions.gnome.org/extension-data/clipboard-indicatortudmotu.com.v42.shell-extension.zip
 https://ftp.acc.umu.se/pub/gnome/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v7.shell-extension.zip
 https://ftp.acc.umu.se/pub/gnome/sources/evolution-data-server/3.46/evolution-data-server-3.46.0.tar.xz
@@ -41,7 +40,7 @@ https://ftp.acc.umu.se/pub/gnome/sources/gupnp-av/0.14/gupnp-av-0.14.1.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gupnp-dlna/0.12/gupnp-dlna-0.12.0.tar.xz
 https://gstreamer.freedesktop.org/src/gst-editing-services/gst-editing-services-1.20.3.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-control-center/43/gnome-control-center-43.0.tar.xz
-https://ftp.acc.umu.se/pub/gnome/sources/gdm/42/gdm-42.0.tar.xz
+https://ftp.acc.umu.se/pub/gnome/sources/gdm/43/gdm-43.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-shell/43/gnome-shell-43.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-shell-extensions/43/gnome-shell-extensions-43.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/gnome-user-docs/43/gnome-user-docs-43.0.tar.xz
@@ -83,6 +82,7 @@ https://github.com/flatpak/libportal/releases/download/0.6/libportal-0.6.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/libdazzle/3.44/libdazzle-3.44.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/mutter/43/mutter-43.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/nautilus/43/nautilus-43.0.tar.xz
+https://extensions.gnome.org/extension-data/panoelhan.io.v10.shell-extension.zip
 https://ftp.acc.umu.se/pub/gnome/sources/rygel/0.42/rygel-0.42.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/seahorse/42/seahorse-42.0.tar.xz
 https://ftp.acc.umu.se/pub/gnome/sources/sysprof/3.46/sysprof-3.46.0.tar.xz

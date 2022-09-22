@@ -473,15 +473,15 @@ rm -rf mutter-43.0
 # GDM
 groupadd -g 67 gdm
 useradd -c "GDM Daemon" -d /var/lib/gdm -u 67 -g gdm -s /bin/false gdm
-tar -xf gdm-42.0.tar.xz
-cd gdm-42.0
+tar -xf gdm-43.0.tar.xz
+cd gdm-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddefault-pam-config=lfs -Dgdm-xsession=true -Dplymouth=enabled -Dselinux=disabled -Dsystemd-journal=true -Duser-display-server=true -Dwayland-support=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gdm -Dm644 ../COPYING
 cd ../..
-rm -rf gdm-42.0
+rm -rf gdm-43.0
 # telepathy-mission-control
 tar -xf telepathy-mission-control-5.16.6.tar.gz
 cd telepathy-mission-control-5.16.6
@@ -922,11 +922,10 @@ sed -e 's|"42"|"43"|' -i /usr/share/gnome-shell/extensions/appindicatorsupport@r
 mkdir /usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com; unzip gtk4-dingsmedius.gitlab.com.v7.shell-extension.zip -d /usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com
 chmod 644 /usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-desktop-icons-ng-gtk4 -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-desktop-icons-ng-gtk4.txt
-# gnome-shell-extension-clipboard-indicator
-mkdir /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com; unzip clipboard-indicatortudmotu.com.v42.shell-extension.zip -d /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
-chmod 644 /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com/metadata.json
-install -t /usr/share/licenses/gnome-shell-extension-clipboard-indicator -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-clipboard-indicator.txt
-sed -e 's|"42"|"43"|' -i /usr/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com/metadata.json
+# gnome-shell-extension-pano
+mkdir /usr/share/gnome-shell/extensions/pano@elhan.io; unzip panoelhan.io.v10.shell-extension.zip -d /usr/share/gnome-shell/extensions/pano@elhan.io
+chmod 644 /usr/share/gnome-shell/extensions/pano@elhan.io/metadata.json
+install -t /usr/share/licenses/gnome-shell-extension-pano -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-pano.txt
 # gnome-shell-extension-alphabetical-grid-extension
 mkdir /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst; unzip AlphabeticalAppGridstuarthayhurst.v26.shell-extension.zip -d /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst
 chmod 644 /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst/metadata.json
@@ -979,7 +978,7 @@ set-gdm-theme set -b /usr/share/gdm/gdm-background.png
 cat >> /usr/share/glib-2.0/schemas/10_gnome-shell.gschema.override << "END"
 [org.gnome.shell]
 favorite-apps=['org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'org.gnome.Software.desktop', 'org.gnome.TextEditor.desktop']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gtk4-ding@smedius.gitlab.com', 'clipboard-indicator@tudmotu.com', 'AlphabeticalAppGrid@stuarthayhurst', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'favourites-in-appgrid@harshadgavali.gitlab.org']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gtk4-ding@smedius.gitlab.com', 'pano@elhan.io', 'AlphabeticalAppGrid@stuarthayhurst', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'favourites-in-appgrid@harshadgavali.gitlab.org']
 
 [org.gnome.desktop.interface]
 color-scheme='prefer-dark'

@@ -8,6 +8,7 @@ Changes:
 - [GNOME] Switched to the GTK4 port of the desktop icons GNOME extension.
 - [GNOME] Upgraded to GNOME 43.
 - [GNOME] Added Sysprof main GTK4/libadwaita application from MassOS's core system.
+- [GNOME] Switched to the Pano GNOME Clipboard extension.
 
 Upgraded software (GNOME):
 
@@ -44,6 +45,7 @@ Upgraded software (GNOME):
 - gnome-characters: `42.0 --> 43.0`
 - gnome-firmware: `42.2 --> 43.0`
 - gnome-terminal: `3.44.1 --> 3.46.1`
+- gdm: `42.0 --> 43.0`
 - libadwaita: `1.1.4 --> 1.2.0`
 - libnma-gtk4: `1.8.40 --> 1.10.2`
 - libgweather: `4.0.0 --> 4.2.0`
