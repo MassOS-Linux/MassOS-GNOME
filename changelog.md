@@ -46,6 +46,8 @@ Upgraded software (GNOME):
 - gnome-firmware: `42.2 --> 43.0`
 - gnome-terminal: `3.44.1 --> 3.46.1`
 - gdm: `42.0 --> 43.0`
+- gnome-tour: `42.0 --> 43.0`
+- gnome-session: `42.0 --> 43.0`
 - libadwaita: `1.1.4 --> 1.2.0`
 - libnma-gtk4: `1.8.40 --> 1.10.2`
 - libgweather: `4.0.0 --> 4.2.0`

@@ -289,8 +289,8 @@ install -t /usr/share/licenses/gnome-bluetooth -Dm644 ../COPYING ../COPYING.LIB
 cd ../..
 rm -rf gnome-bluetooth-42.4
 # gnome-session
-tar -xf gnome-session-42.0.tar.xz
-cd gnome-session-42.0
+tar -xf gnome-session-43.0.tar.xz
+cd gnome-session-43.0
 sed -i 's|/bin/sh|/bin/sh -l|' gnome-session/gnome-session.in
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddeprecation_flags=false -Dsystemd=true -Dsystemd_session=enable -Dsystemd_journal=true -Ddocbook=false -Dman=true ..
@@ -298,7 +298,7 @@ ninja
 ninja install
 install -t /usr/share/licenses/gnome-session -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-session-42.0
+rm -rf gnome-session-43.0
 # gcr4
 tar -xf gcr-3.92.0.tar.xz
 cd gcr-3.92.0
@@ -902,15 +902,15 @@ install -t /usr/share/licenses/gdm-tools -Dm644 LICENSE
 cd ..
 rm -rf gdm-tools-1.1
 # gnome-tour
-tar -xf gnome-tour-42.0.tar.xz
-cd gnome-tour-42.0
+tar -xf gnome-tour-43.0.tar.xz
+cd gnome-tour-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 RUSTFLAGS="-C relocation-model=dynamic-no-pic" ninja
 RUSTFLAGS="-C relocation-model=dynamic-no-pic" ninja install
 install -t /usr/share/licenses/gnome-tour -Dm644 ../LICENSE.md
 cd ../..
-rm -rf gnome-tour-42.0
+rm -rf gnome-tour-43.0
 # Additional GNOME tweaks.
 # Global Extensions
 # gnome-shell-extension-appindicator
