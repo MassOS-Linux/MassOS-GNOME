@@ -619,6 +619,16 @@ ninja install
 install -t /usr/share/licenses/editorconfig-core-c -Dm644 ../LICENSE
 cd ../..
 rm -rf editorconfig-core-c-0.12.5
+# libgda
+tar -xf libgda-6.0.0.tar.xz
+cd libgda-6.0.0
+mkdir build; cd build
+meson --prefix=/usr --buildtype=minsize ..
+ninja
+ninja install
+install -t /usr/share/licenses/libgda -Dm644 ../COPYING ../COPYING.LIB
+cd ../..
+rm -rf libgda-6.0.0
 # Main GNOME apps.
 # Nautilus
 tar -xf nautilus-43.0.tar.xz

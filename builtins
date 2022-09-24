@@ -79,6 +79,7 @@ libnma-gtk4
 libshumate
 libportal-gtk4
 libdazzle
+libgda
 mutter
 nautilus
 rygel
