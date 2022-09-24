@@ -114,24 +114,24 @@ ninja install
 install -t /usr/share/licenses/gtk4 -Dm644 ../COPYING
 cd ../..
 rm -rf gtk-4.8.1
-# JS91.
-tar -xf firefox-91.13.0esr.source.tar.xz
-cd firefox-91.13.0
+# JS102.
+tar -xf firefox-102.3.0esr.source.tar.xz
+cd firefox-102.3.0
 chmod +x js/src/configure.in
-mkdir JS91-build; cd JS91-build
+mkdir JS102-build; cd JS102-build
 ../js/src/configure.in --prefix=/usr --enable-linker=lld --with-intl-api --with-system-zlib --with-system-icu --disable-jemalloc --disable-debug-symbols --enable-readline
 make
 make install
 rm -f /usr/lib/libjs_static.ajs
-sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js91-config
-install -t /usr/share/licenses/js91 -Dm644 ../../extra-package-licenses/js91-license.txt
+sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js102-config
+install -t /usr/share/licenses/js102 -Dm644 ../../extra-package-licenses/js102-license.txt
 cd ../..
-rm -rf firefox-91.13.0
+rm -rf firefox-102.3.0
 # Gjs (Precompiled)
-tar --no-same-owner --same-permissions -xf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07-2.tar.xz
-cp -a gjs-1.73.1-x86_64-precompiled-MassOS-2022.07/BINARY/* /
+tar --no-same-owner --same-permissions -xf gjs-1.74.0-x86_64-precompiled-MassOS-2022.09.tar.xz
+cp -a gjs-1.74.0-x86_64-precompiled-MassOS-2022.09/BINARY/* /
 ldconfig
-rm -rf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07
+rm -rf gjs-1.74.0-x86_64-precompiled-MassOS-2022.09
 # gnome-desktop
 tar -xf gnome-desktop-43.tar.xz
 cd gnome-desktop-43
