@@ -13,7 +13,6 @@ export LC_ALL="en_US.UTF-8"
 export MAKEFLAGS="-j$(nproc)"
 export FORCE_UNSAFE_CONFIGURE=1
 export SHELL=/bin/bash
-export CFLAGS="-Os -pipe" CXXFLAGS="-Os -pipe"
 # === IF RESUMING A FAILED BUILD, ONLY REMOVE LINES BELOW THIS ONE.
 # Main GNOME components.
 # totem-pl-parser
