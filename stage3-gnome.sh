@@ -13,6 +13,7 @@ export LC_ALL="en_US.UTF-8"
 export MAKEFLAGS="-j$(nproc)"
 export FORCE_UNSAFE_CONFIGURE=1
 export SHELL=/bin/bash
+export CFLAGS="-Os -pipe" CXXFLAGS="-Os -pipe"
 # === IF RESUMING A FAILED BUILD, ONLY REMOVE LINES BELOW THIS ONE.
 # Main GNOME components.
 # totem-pl-parser
@@ -20,7 +21,7 @@ tar -xf totem-pl-parser-3.26.6.tar.xz
 cd totem-pl-parser-3.26.6
 sed -i '/maybe-uninitialized/d' meson.build
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Denable-gtk-doc=false ..
+meson --prefix=/usr --buildtype=minsize -Denable-gtk-doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/totem-pl-parser -Dm644 ../COPYING.LIB
@@ -48,7 +49,7 @@ rm -rf GConf-3.2.6
 tar -xf geocode-glib-3.26.4.tar.xz
 cd geocode-glib-3.26.4
 mkdir build; cd build
-meson --prefix /usr --buildtype=release -Denable-gtk-doc=false -Denable-installed-tests=false -Dsoup2=false ..
+meson --prefix /usr --buildtype=minsize -Denable-gtk-doc=false -Denable-installed-tests=false -Dsoup2=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/geocode-glib -Dm644 ../COPYING.LIB
@@ -58,7 +59,7 @@ rm -rf geocode-glib-3.26.4
 tar -xf gnome-autoar-0.4.3.tar.xz
 cd gnome-autoar-0.4.3
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dvapi=true -Dtests=false ..
+meson --prefix=/usr --buildtype=minsize -Dvapi=true -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-autoar -Dm644 ../COPYING
@@ -68,7 +69,7 @@ rm -rf gnome-autoar-0.4.3
 tar -xf tracker-3.4.0.tar.xz
 cd tracker-3.4.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddocs=false -Dman=true -Dtests=false ..
+meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dman=true -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/tracker -Dm644 ../COPYING
@@ -87,7 +88,7 @@ rm -rf libgrss-0.7.0
 tar -xf tracker-miners-3.4.0.tar.xz
 cd tracker-miners-3.4.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dman=true -Dfunctional_tests=false ..
+meson --prefix=/usr --buildtype=minsize -Dman=true -Dfunctional_tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/tracker-miners -Dm644 ../COPYING ../COPYING.GPL ../COPYING.LGPL
@@ -97,7 +98,7 @@ rm -rf tracker-miners-3.4.0
 tar -xf libcloudproviders-0.3.1.tar.gz
 cd libcloudproviders-0.3.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Denable-gtk-doc=false -Dinstalled-tests=false ..
+meson --prefix=/usr --buildtype=minsize -Denable-gtk-doc=false -Dinstalled-tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libcloudproviders -Dm644 ../LICENSE
@@ -107,7 +108,7 @@ rm -rf libcloudproviders-0.3.1
 tar -xf gtk-4.8.1.tar.xz
 cd gtk-4.8.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dx11-backend=true -Dwayland-backend=true -Dbroadway-backend=true -Dmedia-ffmpeg=enabled -Ddemos=false -Dmedia-gstreamer=enabled -Dprint-cups=enabled -Dvulkan=enabled -Dcloudproviders=enabled -Dtracker=enabled -Dcolord=enabled -Dgtk_doc=false -Dman-pages=true -Dbuild-examples=false -Dbuild-tests=false -Dinstall-tests=false ..
+meson --prefix=/usr --buildtype=minsize -Dx11-backend=true -Dwayland-backend=true -Dbroadway-backend=true -Dmedia-ffmpeg=enabled -Ddemos=false -Dmedia-gstreamer=enabled -Dprint-cups=enabled -Dvulkan=enabled -Dcloudproviders=enabled -Dtracker=enabled -Dcolord=enabled -Dgtk_doc=false -Dman-pages=true -Dbuild-examples=false -Dbuild-tests=false -Dinstall-tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gtk4 -Dm644 ../COPYING
@@ -135,7 +136,7 @@ rm -rf gjs-1.74.0-x86_64-precompiled-MassOS-2022.09
 tar -xf gnome-desktop-43.tar.xz
 cd gnome-desktop-43
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddebug_tools=false -Dsystemd=enabled -Dgtk_doc=false -Dinstalled_tests=false -Dbuild_gtk4=true ..
+meson --prefix=/usr --buildtype=minsize -Ddebug_tools=false -Dsystemd=enabled -Dgtk_doc=false -Dinstalled_tests=false -Dbuild_gtk4=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-desktop -Dm644 ../COPYING ../COPYING-DOCS ../COPYING.LIB
@@ -154,7 +155,7 @@ rm -rf gnome-menus-3.36.0
 tar -xf gnome-video-effects-0.5.0.tar.xz
 cd gnome-video-effects-0.5.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-video-effects -Dm644 ../COPYING
@@ -164,7 +165,7 @@ rm -rf gnome-video-effects-0.5.0
 tar -xf grilo-0.3.15.tar.xz
 cd grilo-0.3.15
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Denable-gtk-doc=false -Denable-test-ui=false ..
+meson --prefix=/usr --buildtype=minsize -Denable-gtk-doc=false -Denable-test-ui=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/grilo -Dm644 ../COPYING
@@ -174,7 +175,7 @@ rm -rf grilo-0.3.15
 tar -xf grilo-plugins-0.3.15.tar.xz
 cd grilo-plugins-0.3.15
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/grilo-plugins -Dm644 ../COPYING
@@ -193,7 +194,7 @@ rm -rf libgtop-2.40.0
 tar -xf libgweather-4.2.0.tar.xz
 cd libgweather-4.2.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dgtk_doc=false -Dtests=false -Dsoup2=false ..
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dtests=false -Dsoup2=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libgweather -Dm644 ../COPYING
@@ -203,7 +204,7 @@ rm -rf libgweather-4.2.0
 tar -xf evolution-data-server-3.46.0.tar.xz
 cd evolution-data-server-3.46.0
 mkdir build; cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DENABLE_VALA_BINDINGS=ON -DENABLE_INSTALLED_TESTS=OFF -DENABLE_GOOGLE=ON -DWITH_OPENLDAP=ON -DWITH_KRB5=ON -DENABLE_INTROSPECTION=ON -DENABLE_GTK_DOC=OFF -DWITH_LIBDB=ON -DWITH_GWEATHER4=ON -DWITH_SYSTEMDUSERUNITDIR=yes -DENABLE_EXAMPLES=OFF -DENABLE_OAUTH2_WEBKITGTK=ON -DENABLE_OAUTH2_WEBKITGTK4=OFF -Wno-dev -G Ninja ..
+cmake -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_INSTALL_PREFIX=/usr -DSYSCONF_INSTALL_DIR=/etc -DENABLE_VALA_BINDINGS=ON -DENABLE_INSTALLED_TESTS=OFF -DENABLE_GOOGLE=ON -DWITH_OPENLDAP=ON -DWITH_KRB5=ON -DENABLE_INTROSPECTION=ON -DENABLE_GTK_DOC=OFF -DWITH_LIBDB=ON -DWITH_GWEATHER4=ON -DWITH_SYSTEMDUSERUNITDIR=yes -DENABLE_EXAMPLES=OFF -DENABLE_OAUTH2_WEBKITGTK=ON -DENABLE_OAUTH2_WEBKITGTK4=OFF -Wno-dev -G Ninja ..
 ninja
 ninja install
 install -t /usr/share/licenses/evolution-data-server -Dm644 ../COPYING
@@ -222,7 +223,7 @@ rm -rf telepathy-glib-0.24.2
 tar -xf folks-0.15.5.tar.xz
 cd folks-0.15.5
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddocs=false -Dtests=false -Dinstalled_tests=false ..
+meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dtests=false -Dinstalled_tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/folks -Dm644 ../COPYING
@@ -232,7 +233,7 @@ rm -rf folks-0.15.5
 tar -xf gsound-1.0.3.tar.xz
 cd gsound-1.0.3
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dgtk_doc=false ..
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gsound -Dm644 ../COPYING
@@ -242,7 +243,7 @@ rm -rf gsound-1.0.3
 tar -xf dconf-0.40.0.tar.xz
 cd dconf-0.40.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dbash_completion=true -Dman=true -Dgtk_doc=false ..
+meson --prefix=/usr --buildtype=minsize -Dbash_completion=true -Dman=true -Dgtk_doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/dconf -Dm644 ../COPYING
@@ -261,7 +262,7 @@ rm -rf exempi-2.6.2
 tar -xf zenity-3.43.0.tar.xz
 cd zenity-3.43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dlibnotify=true -Dwebkitgtk=true ..
+meson --prefix=/usr --buildtype=minsize -Dlibnotify=true -Dwebkitgtk=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/zenity -Dm644 ../COPYING
@@ -271,7 +272,7 @@ rm -rf zenity-3.43.0
 tar -xf libadwaita-1.2.0.tar.xz
 cd libadwaita-1.2.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dgtk_doc=false -Dtests=false -Dexamples=false ..
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dtests=false -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libadwaita -Dm644 ../COPYING
@@ -281,7 +282,7 @@ rm -rf libadwaita-1.2.0
 tar -xf gnome-bluetooth-42.4.tar.xz
 cd gnome-bluetooth-42.4
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dsendto=true -Dgtk_doc=false ..
+meson --prefix=/usr --buildtype=minsize -Dsendto=true -Dgtk_doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-bluetooth -Dm644 ../COPYING ../COPYING.LIB
@@ -292,7 +293,7 @@ tar -xf gnome-session-43.0.tar.xz
 cd gnome-session-43.0
 sed -i 's|/bin/sh|/bin/sh -l|' gnome-session/gnome-session.in
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddeprecation_flags=false -Dsystemd=true -Dsystemd_session=enable -Dsystemd_journal=true -Ddocbook=false -Dman=true ..
+meson --prefix=/usr --buildtype=minsize -Ddeprecation_flags=false -Dsystemd=true -Dsystemd_session=enable -Dsystemd_journal=true -Ddocbook=false -Dman=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-session -Dm644 ../COPYING
@@ -302,7 +303,7 @@ rm -rf gnome-session-43.0
 tar -xf gcr-3.92.0.tar.xz
 cd gcr-3.92.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dgtk_doc=false ..
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gcr4 -Dm644 ../COPYING
@@ -312,7 +313,7 @@ rm -rf gcr-3.92.0
 tar -xf gnome-settings-daemon-43.0.tar.xz
 cd gnome-settings-daemon-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dsystemd=true -Dalsa=true -Dgudev=true -Dcups=true -Dnetwork_manager=true -Drfkill=true -Dsmartcard=true -Dusb-protection=true -Dwayland=true -Dwwan=true -Dcolord=true ..
+meson --prefix=/usr --buildtype=minsize -Dsystemd=true -Dalsa=true -Dgudev=true -Dcups=true -Dnetwork_manager=true -Drfkill=true -Dsmartcard=true -Dusb-protection=true -Dwayland=true -Dwwan=true -Dcolord=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-settings-daemon -Dm644 ../COPYING ../COPYING.LIB
@@ -322,7 +323,7 @@ rm -rf gnome-settings-daemon-43.0
 tar -xf libnma-1.10.2.tar.xz
 cd libnma-1.10.2
 mkdir nma-build; cd nma-build
-meson --prefix=/usr --buildtype=release -Dlibnma_gtk4=true ..
+meson --prefix=/usr --buildtype=minsize -Dlibnma_gtk4=true ..
 ninja
 ninja install
 ln -sf libnma /usr/share/licenses/libnma-gtk4
@@ -343,7 +344,7 @@ rm -rf ibus-1.5.27
 tar -xf colord-gtk-0.3.0.tar.xz
 cd colord-gtk-0.3.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dgtk4=true -Dgtk3=true -Dgtk2=true -Dtests=false -Dman=false -Ddocs=false ..
+meson --prefix=/usr --buildtype=minsize -Dgtk4=true -Dgtk3=true -Dgtk2=true -Dtests=false -Dman=false -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/colord-gtk -Dm644 ../COPYING
@@ -353,7 +354,7 @@ rm -rf colord-gtk-0.3.0
 tar -xf cups-pk-helper-0.2.7.tar.xz
 cd cups-pk-helper-0.2.7
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/cups-pk-helper -Dm644 ../COPYING
@@ -363,7 +364,7 @@ rm -rf cups-pk-helper-0.2.7
 tar -xf gssdp-1.6.0.tar.xz
 cd gssdp-1.6.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dgtk_doc=false -Dexamples=false ..
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gssdp -Dm644 ../COPYING
@@ -373,7 +374,7 @@ rm -rf gssdp-1.6.0
 tar -xf gupnp-1.6.0.tar.xz
 cd gupnp-1.6.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dexamples=false ..
+meson --prefix=/usr --buildtype=minsize -Dexamples=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gupnp -Dm644 ../COPYING
@@ -383,7 +384,7 @@ rm -rf gupnp-1.6.0
 tar -xf gupnp-av-0.14.1.tar.xz
 cd gupnp-av-0.14.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gupnp-av -Dm644 ../COPYING
@@ -393,7 +394,7 @@ rm -rf gupnp-av-0.14.1
 tar -xf gupnp-dlna-0.12.0.tar.xz
 cd gupnp-dlna-0.12.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gupnp-dlna -Dm644 ../COPYING
@@ -403,7 +404,7 @@ rm -rf gupnp-dlna-0.12.0
 tar -xf gst-editing-services-1.20.3.tar.xz
 cd gst-editing-services-1.20.3
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddoc=disabled -Dexamples=disabled -Dtests=disabled ..
+meson --prefix=/usr --buildtype=minsize -Ddoc=disabled -Dexamples=disabled -Dtests=disabled ..
 ninja
 ninja install
 install -t /usr/share/licenses/gst-editing-services -Dm644 ../COPYING ../COPYING.LIB
@@ -413,7 +414,7 @@ rm -rf gst-editing-services-1.20.3
 tar -xf libmediaart-1.9.6.tar.xz
 cd libmediaart-1.9.6
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/libmediaart -Dm644 ../COPYING ../COPYING.LESSER
@@ -423,7 +424,7 @@ rm -rf libmediaart-1.9.6
 tar -xf rygel-0.42.0.tar.xz
 cd rygel-0.42.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dexamples=false -Dtests=false ..
+meson --prefix=/usr --buildtype=minsize -Dexamples=false -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/rygel -Dm644 ../COPYING ../COPYING.logo
@@ -433,7 +434,7 @@ rm -rf rygel-0.42.0
 tar -xf gnome-control-center-43.0.tar.xz
 cd gnome-control-center-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddocumentation=false -Dibus=true -Dtests=false -Dwayland=true -Dmalcontent=true ..
+meson --prefix=/usr --buildtype=minsize -Ddocumentation=false -Dibus=true -Dtests=false -Dwayland=true -Dmalcontent=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-control-center -Dm644 ../COPYING
@@ -443,7 +444,7 @@ rm -rf gnome-control-center-43.0
 tar -xf libdazzle-3.44.0.tar.xz
 cd libdazzle-3.44.0
 mkdir DAZZLE-build; cd DAZZLE-build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/libdazzle -Dm644 ../COPYING
@@ -453,7 +454,7 @@ rm -rf libdazzle-3.44.0
 tar -xf sysprof-3.46.0.tar.xz
 cd sysprof-3.46.0
 mkdir SYSPROF-build; cd SYSPROF-build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/sysprof -Dm644 ../COPYING ../COPYING.gpl-2
@@ -463,7 +464,7 @@ rm -rf sysprof-3.46.0
 tar -xf mutter-43.0.tar.xz
 cd mutter-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dtests=false -Dinstalled_tests=false -Ddocs=false ..
+meson --prefix=/usr --buildtype=minsize -Dtests=false -Dinstalled_tests=false -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/mutter -Dm644 ../COPYING
@@ -475,7 +476,7 @@ useradd -c "GDM Daemon" -d /var/lib/gdm -u 67 -g gdm -s /bin/false gdm
 tar -xf gdm-43.0.tar.xz
 cd gdm-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddefault-pam-config=lfs -Dgdm-xsession=true -Dplymouth=enabled -Dselinux=disabled -Dsystemd-journal=true -Duser-display-server=true -Dwayland-support=true ..
+meson --prefix=/usr --buildtype=minsize -Ddefault-pam-config=lfs -Dgdm-xsession=true -Dplymouth=enabled -Dselinux=disabled -Dsystemd-journal=true -Duser-display-server=true -Dwayland-support=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gdm -Dm644 ../COPYING
@@ -494,7 +495,7 @@ rm -rf telepathy-mission-control-5.16.6
 tar -xf gnome-shell-43.0.tar.xz
 cd gnome-shell-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dextensions_tool=true -Dextensions_app=false -Dgtk_doc=false -Dman=true -Dtests=false -Dnetworkmanager=true -Dsystemd=true ..
+meson --prefix=/usr --buildtype=minsize -Dextensions_tool=true -Dextensions_app=false -Dgtk_doc=false -Dman=true -Dtests=false -Dnetworkmanager=true -Dsystemd=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-shell -Dm644 ../COPYING
@@ -504,7 +505,7 @@ rm -rf gnome-shell-43.0
 tar -xf gnome-shell-extensions-43.0.tar.xz
 cd gnome-shell-extensions-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-shell-extensions -Dm644 ../COPYING
@@ -523,7 +524,7 @@ rm -rf gnome-user-docs-43.0
 tar -xf gnome-browser-connector-v42.1.tar.gz
 cd gnome-browser-connector-v42.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja install
 install -t /usr/share/licenses/gnome-browser-connector -Dm644 ../LICENSE
 cd ../..
@@ -533,7 +534,7 @@ tar -xf cantarell-fonts-0.303.1.tar.xz
 cd cantarell-fonts-0.303.1
 cp ../Cantarell-VF.otf prebuilt
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Duseprebuilt=true ..
+meson --prefix=/usr --buildtype=minsize -Duseprebuilt=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/cantarell-fonts -Dm644 ../COPYING
@@ -543,7 +544,7 @@ rm -rf cantarell-fonts-0.303.1
 tar -xf text-engine-0.1.1.tar.gz
 cd text-engine-0.1.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/text-engine -Dm644 ../COPYING
@@ -553,7 +554,7 @@ rm -rf text-engine-0.1.1
 tar -xf blueprint-compiler-v0.4.0.tar.gz
 cd blueprint-compiler-v0.4.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddocs=false ..
+meson --prefix=/usr --buildtype=minsize -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/blueprint-compiler -Dm644 ../COPYING
@@ -582,7 +583,7 @@ rm -rf ytnef-2.0
 tar -xf gtksourceview-5.6.0.tar.xz
 cd gtksourceview-5.6.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dsysprof=true ..
+meson --prefix=/usr --buildtype=minsize -Dsysprof=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gtksourceview5 -Dm644 ../COPYING
@@ -592,7 +593,7 @@ rm -rf gtksourceview-5.6.0
 tar -xf libshumate-1.0.1.tar.xz
 cd libshumate-1.0.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dgtk_doc=false ..
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libshumate -Dm644 ../COPYING
@@ -602,7 +603,7 @@ rm -rf libshumate-1.0.1
 tar -xf libportal-0.6.tar.xz
 cd libportal-0.6
 mkdir portal-build; cd portal-build
-meson --prefix=/usr --buildtype=release -Dbackends=gtk4 -Ddocs=false -Dtests=false ..
+meson --prefix=/usr --buildtype=minsize -Dbackends=gtk4 -Ddocs=false -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/libportal-gtk4 -Dm644 ../COPYING
@@ -612,7 +613,7 @@ rm -rf libportal-0.6
 tar -xf editorconfig-core-c-0.12.5.tar.gz
 cd editorconfig-core-c-0.12.5
 mkdir build; cd build
-cmake -DCMAKE_BUILD_TYPE=releaseRel -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_DOCUMENTATION=OFF -Wno-dev -G Ninja ..
+cmake -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_DOCUMENTATION=OFF -Wno-dev -G Ninja ..
 ninja 
 ninja install
 install -t /usr/share/licenses/editorconfig-core-c -Dm644 ../LICENSE
@@ -622,7 +623,7 @@ rm -rf editorconfig-core-c-0.12.5
 tar -xf libgda-6.0.0.tar.xz
 cd libgda-6.0.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/libgda -Dm644 ../COPYING ../COPYING.LIB
@@ -633,7 +634,7 @@ rm -rf libgda-6.0.0
 tar -xf nautilus-43.0.tar.xz
 cd nautilus-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddocs=false -Dextensions=true -Dpackagekit=false -Dselinux=false -Dtests=none ..
+meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dextensions=true -Dpackagekit=false -Dselinux=false -Dtests=none ..
 ninja
 ninja install
 install -t /usr/share/licenses/nautilus -Dm644 ../LICENSE
@@ -645,7 +646,7 @@ cd geary-40.0
 patch -Np1 -i ../patches/geary-40.0-upstreamfix.patch
 sed -i 's/-4.0/-4.1/' meson.build
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dprofile=release ..
+meson --prefix=/usr --buildtype=minsize -Dprofile=release ..
 ninja
 ninja install
 install -t /usr/share/licenses/geary -Dm644 ../COPYING ../COPYING.icons ../COPYING.pyyaml ../code-of-conduct.md
@@ -655,7 +656,7 @@ rm -rf geary-40.0
 tar -xf gnome-music-42.1.tar.xz
 cd gnome-music-42.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-music -Dm644 ../LICENSE
@@ -665,7 +666,7 @@ rm -rf gnome-music-42.1
 tar -xf gnome-calendar-43.0.tar.xz
 cd gnome-calendar-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-calendar -Dm644 ../COPYING
@@ -676,7 +677,7 @@ tar -xf gnome-extension-manager-0.3.2.tar.gz
 cd extension-manager-0.3.2
 patch -Np1 -i ../patches/gnome-extension-manager-3.2-gtk-4.8-fixes.patch
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-extension-manager -Dm644 ../COPYING
@@ -695,7 +696,7 @@ rm -rf yelp-42.2
 tar -xf baobab-43.0.tar.xz
 cd baobab-43.0
 mkdir baobab-build; cd baobab-build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/baobab -Dm644 ../COPYING ../COPYING.docs
@@ -705,7 +706,7 @@ rm -rf baobab-43.0
 tar -xf cheese-43.alpha.tar.xz
 cd cheese-43.alpha
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dtests=false -Dgtk_doc=false -Dman=true ..
+meson --prefix=/usr --buildtype=minsize -Dtests=false -Dgtk_doc=false -Dman=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/cheese -Dm644 ../COPYING
@@ -715,7 +716,7 @@ rm -rf cheese-43.alpha
 tar -xf eog-43.0.tar.xz
 cd eog-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dgtk_doc=false -Dinstalled_tests=false -Dlibportal=true ..
+meson --prefix=/usr --buildtype=minsize -Dgtk_doc=false -Dinstalled_tests=false -Dlibportal=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/eog -Dm644 ../COPYING
@@ -725,7 +726,7 @@ rm -rf eog-43.0
 tar -xf evince-43.0.tar.xz
 cd evince-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dnautilus=false ..
+meson --prefix=/usr --buildtype=minsize -Dnautilus=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/evince -Dm644 ../COPYING
@@ -735,7 +736,7 @@ rm -rf evince-43.0
 tar -xf file-roller-43.0.tar.xz
 cd file-roller-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dpackagekit=false ..
+meson --prefix=/usr --buildtype=minsize -Dpackagekit=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/file-roller -Dm644 ../COPYING
@@ -745,7 +746,7 @@ rm -rf file-roller-43.0
 tar -xf gnome-calculator-43.0.1.tar.xz
 cd gnome-calculator-43.0.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-calculator -Dm644 ../COPYING
@@ -755,7 +756,7 @@ rm -rf gnome-calculator-43.0.1
 tar -xf gnome-color-manager-3.36.0.tar.xz
 cd gnome-color-manager-3.36.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dtests=false ..
+meson --prefix=/usr --buildtype=minsize -Dtests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-color-manager -Dm644 ../COPYING
@@ -765,7 +766,7 @@ rm -rf gnome-color-manager-3.36.0
 tar -xf gnome-disk-utility-43.0.tar.xz
 cd gnome-disk-utility-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dlogind=libsystemd -Dgsd_plugin=true -Dman=true ..
+meson --prefix=/usr --buildtype=minsize -Dlogind=libsystemd -Dgsd_plugin=true -Dman=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-disk-utility -Dm644 ../COPYING
@@ -775,7 +776,7 @@ rm -rf gnome-disk-utility-43.0
 tar -xf gnome-maps-43.0.tar.xz
 cd gnome-maps-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-maps -Dm644 ../COPYING
@@ -786,7 +787,7 @@ tar -xf gnome-screenshot-41.0.tar.xz
 cd gnome-screenshot-41.0
 sed -i '/merge_file/{n;d}' data/meson.build
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-screenshot -Dm644 ../COPYING
@@ -796,7 +797,7 @@ rm -rf gnome-screenshot-41.0
 tar -xf gnome-system-monitor-42.0.tar.xz
 cd gnome-system-monitor-42.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dsystemd=true ..
+meson --prefix=/usr --buildtype=minsize -Dsystemd=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-system-monitor -Dm644 ../COPYING
@@ -806,7 +807,7 @@ rm -rf gnome-system-monitor-42.0
 tar -xf gnome-terminal-3.46.1.tar.bz2
 cd gnome-terminal-3.46.1
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Ddocs=false ..
+meson --prefix=/usr --buildtype=minsize -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-terminal -Dm644 ../COPYING ../COPYING.GFDL
@@ -816,7 +817,7 @@ rm -rf gnome-terminal-3.46.1
 tar -xf gnome-tweaks-42.beta.tar.xz
 cd gnome-tweaks-42.beta
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-tweaks -Dm644 ../LICENSES/*
@@ -826,7 +827,7 @@ rm -rf gnome-tweaks-42.beta
 tar -xf gnome-weather-43.0.tar.xz
 cd gnome-weather-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-weather -Dm644 ../COPYING.md
@@ -836,7 +837,7 @@ rm -rf gnome-weather-43.0
 tar -xf seahorse-42.0.tar.xz
 cd seahorse-42.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dmanpage=true ..
+meson --prefix=/usr --buildtype=minsize -Dmanpage=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/seahorse -Dm644 ../COPYING ../COPYING-DOCS ../COPYING.LIB
@@ -856,7 +857,7 @@ rm -rf gparted-GPARTED_1_4_0
 tar -xf gnome-software-43.0.tar.xz
 cd gnome-software-43.0
 mkdir gnome-software-build; cd gnome-software-build
-meson --prefix=/usr --buildtype=release -Dpackagekit=false -Dtests=false -Dsoup2=true ..
+meson --prefix=/usr --buildtype=minsize -Dpackagekit=false -Dtests=false -Dsoup2=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-software -Dm644 ../COPYING
@@ -866,7 +867,7 @@ rm -rf gnome-software-43.0
 tar -xf totem-43.0.tar.xz
 cd totem-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dhelp=true -Denable-easy-codec-installation=yes -Denable-python=yes -Dwith-plugins=auto -Denable-gtk-doc=false ..
+meson --prefix=/usr --buildtype=minsize -Dhelp=true -Denable-easy-codec-installation=yes -Denable-python=yes -Dwith-plugins=auto -Denable-gtk-doc=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/totem -Dm644 ../COPYING
@@ -876,7 +877,7 @@ rm -rf totem-43.0
 tar -xf gnome-text-editor-43.0.tar.xz
 cd gnome-text-editor-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-text-editor -Dm644 ../COPYING
@@ -886,7 +887,7 @@ rm -rf gnome-text-editor-43.0
 tar -xf gnome-characters-43.0.tar.xz
 cd gnome-characters-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release -Dinstalled_tests=false ..
+meson --prefix=/usr --buildtype=minsize -Dinstalled_tests=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-characters -Dm644 ../COPYING ../COPYINGv2
@@ -896,7 +897,7 @@ rm -rf gnome-characters-43.0
 tar -xf gnome-firmware-43.0.tar.gz
 cd gnome-firmware-43.0
 mkdir gnome-firmware-build; cd gnome-firmware-build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-firmware -Dm644 ../COPYING
@@ -914,7 +915,7 @@ rm -rf gdm-tools-1.1
 tar -xf gnome-tour-43.0.tar.xz
 cd gnome-tour-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=release ..
+meson --prefix=/usr --buildtype=minsize ..
 RUSTFLAGS="-C relocation-model=dynamic-no-pic" ninja
 RUSTFLAGS="-C relocation-model=dynamic-no-pic" ninja install
 install -t /usr/share/licenses/gnome-tour -Dm644 ../LICENSE.md
