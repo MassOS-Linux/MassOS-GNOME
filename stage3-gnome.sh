@@ -464,7 +464,7 @@ rm -rf sysprof-3.46.0
 tar -xf mutter-43.0.tar.xz
 cd mutter-43.0
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dtests=false -Dinstalled_tests=false -Ddocs=false ..
+meson --prefix=/usr --buildtype=minsize -Dtests=false -Dinstalled_tests=false -Ddocs=false -Degl_device=true -Dwayland_eglstream=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/mutter -Dm644 ../COPYING
