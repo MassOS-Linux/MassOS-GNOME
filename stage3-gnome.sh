@@ -1043,7 +1043,7 @@ dconf update
 glib-compile-schemas /usr/share/glib-2.0/schemas
 systemctl enable gdm
 # Firefox.
-tar --no-same-owner -xf firefox-105.0.tar.bz2 -C /usr/lib
+tar --no-same-owner -xf firefox-105.0.1.tar.bz2 -C /usr/lib
 mkdir -p /usr/lib/firefox/distribution
 cat > /usr/lib/firefox/distribution/policies.json << END
 {

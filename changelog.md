@@ -20,7 +20,7 @@ Upgraded software (GNOME):
 - evince: `42.3 --> 43.0`
 - evolution-data-server: `3.44.4 --> 3.46.0`
 - file-roller: `3.42.0 --> 43.0`
-- Firefox: `104.0.1 --> 105.0`
+- Firefox: `104.0.1 --> 105.0.1`
 - gupnp: `1.5.3 --> 1.5.4`
 - gnome-shell-extension-alphabetical-grid-extension: `25 --> 26`
 - gtk4: `4.6.7 --> 4.8.1`
