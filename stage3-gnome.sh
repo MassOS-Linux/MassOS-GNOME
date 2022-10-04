@@ -123,15 +123,15 @@ cp -a gjs-1.74.0-x86_64-precompiled-MassOS-2022.09/BINARY/* /
 ldconfig
 rm -rf gjs-1.74.0-x86_64-precompiled-MassOS-2022.09
 # gnome-desktop
-tar -xf gnome-desktop-43.tar.xz
-cd gnome-desktop-43
+tar -xf gnome-desktop-42.5.tar.xz
+cd gnome-desktop-42.5
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddebug_tools=false -Dsystemd=enabled -Dgtk_doc=false -Dinstalled_tests=false -Dbuild_gtk4=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-desktop -Dm644 ../COPYING ../COPYING-DOCS ../COPYING.LIB
 cd ../..
-rm -rf gnome-desktop-43
+rm -rf gnome-desktop-42.5
 # gnome-menus
 tar -xf gnome-menus-3.36.0.tar.xz
 cd gnome-menus-3.36.0
@@ -279,8 +279,8 @@ install -t /usr/share/licenses/gnome-bluetooth -Dm644 ../COPYING ../COPYING.LIB
 cd ../..
 rm -rf gnome-bluetooth-42.4
 # gnome-session
-tar -xf gnome-session-43.0.tar.xz
-cd gnome-session-43.0
+tar -xf gnome-session-42.0.tar.xz
+cd gnome-session-42.0
 sed -i 's|/bin/sh|/bin/sh -l|' gnome-session/gnome-session.in
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddeprecation_flags=false -Dsystemd=true -Dsystemd_session=enable -Dsystemd_journal=true -Ddocbook=false -Dman=true ..
@@ -288,7 +288,7 @@ ninja
 ninja install
 install -t /usr/share/licenses/gnome-session -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-session-43.0
+rm -rf gnome-session-42.0
 # gcr4
 tar -xf gcr-3.92.0.tar.xz
 cd gcr-3.92.0
@@ -300,15 +300,15 @@ install -t /usr/share/licenses/gcr4 -Dm644 ../COPYING
 cd ../..
 rm -rf gcr-3.92.0
 # gnome-settings-daemon
-tar -xf gnome-settings-daemon-43.0.tar.xz
-cd gnome-settings-daemon-43.0
+tar -xf gnome-settings-daemon-42.2.tar.xz
+cd gnome-settings-daemon-42.2
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dsystemd=true -Dalsa=true -Dgudev=true -Dcups=true -Dnetwork_manager=true -Drfkill=true -Dsmartcard=true -Dusb-protection=true -Dwayland=true -Dwwan=true -Dcolord=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-settings-daemon -Dm644 ../COPYING ../COPYING.LIB
 cd ../..
-rm -rf gnome-settings-daemon-43.0
+rm -rf gnome-settings-daemon-42.2
 # libnma-gtk4
 tar -xf libnma-1.10.2.tar.xz
 cd libnma-1.10.2
@@ -421,15 +421,15 @@ install -t /usr/share/licenses/rygel -Dm644 ../COPYING ../COPYING.logo
 cd ../..
 rm -rf rygel-0.42.0
 # gnome-control-center
-tar -xf gnome-control-center-43.0.tar.xz
-cd gnome-control-center-43.0
+tar -xf gnome-control-center-42.3.tar.xz
+cd gnome-control-center-42.3
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocumentation=false -Dibus=true -Dtests=false -Dwayland=true -Dmalcontent=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-control-center -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-control-center-43.0
+rm -rf gnome-control-center-42.3
 # libdazzle.
 tar -xf libdazzle-3.44.0.tar.xz
 cd libdazzle-3.44.0
@@ -451,27 +451,27 @@ install -t /usr/share/licenses/sysprof -Dm644 ../COPYING ../COPYING.gpl-2
 cd ../..
 rm -rf sysprof-3.46.0
 # Mutter
-tar -xf mutter-43.0.tar.xz
-cd mutter-43.0
+tar -xf mutter-42.5.tar.xz
+cd mutter-42.5
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dtests=false -Dinstalled_tests=false -Ddocs=false -Degl_device=true -Dwayland_eglstream=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/mutter -Dm644 ../COPYING
 cd ../..
-rm -rf mutter-43.0
+rm -rf mutter-42.5
 # GDM
 groupadd -g 67 gdm
 useradd -c "GDM Daemon" -d /var/lib/gdm -u 67 -g gdm -s /bin/false gdm
-tar -xf gdm-43.0.tar.xz
-cd gdm-43.0
+tar -xf gdm-42.0.tar.xz
+cd gdm-42.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddefault-pam-config=lfs -Dgdm-xsession=true -Dplymouth=enabled -Dselinux=disabled -Dsystemd-journal=true -Duser-display-server=true -Dwayland-support=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gdm -Dm644 ../COPYING
 cd ../..
-rm -rf gdm-43.0
+rm -rf gdm-42.0
 # telepathy-mission-control
 tar -xf telepathy-mission-control-5.16.6.tar.gz
 cd telepathy-mission-control-5.16.6
@@ -482,25 +482,25 @@ install -t /usr/share/licenses/telepathy-mission-control -Dm644 COPYING
 cd ..
 rm -rf telepathy-mission-control-5.16.6
 # gnome-shell
-tar -xf gnome-shell-43.0.tar.xz
-cd gnome-shell-43.0
+tar -xf gnome-shell-42.5.tar.xz
+cd gnome-shell-42.5
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dextensions_tool=true -Dextensions_app=false -Dgtk_doc=false -Dman=true -Dtests=false -Dnetworkmanager=true -Dsystemd=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-shell -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-shell-43.0
+rm -rf gnome-shell-42.5
 # gnome-shell-extensions
-tar -xf gnome-shell-extensions-43.0.tar.xz
-cd gnome-shell-extensions-43.0
+tar -xf gnome-shell-extensions-42.3.tar.xz
+cd gnome-shell-extensions-42.3
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-shell-extensions -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-shell-extensions-43.0
+rm -rf gnome-shell-extensions-42.3
 # gnome-user-docs
 tar -xf gnome-user-docs-43.0.tar.xz
 cd gnome-user-docs-43.0
@@ -935,7 +935,6 @@ install -t /usr/share/licenses/gnome-shell-extension-fuzzy-app-search -Dm644 ext
 mkdir /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org; unzip favourites-in-appgridharshadgavali.gitlab.org.v2.shell-extension.zip -d /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org
 chmod 644 /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-favourites-in-appgrid -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-favourites-in-appgrid.txt
-sed -e 's|"42"|"43"|' -i /usr/share/gnome-shell/extensions/favourites-in-appgrid@harshadgavali.gitlab.org/metadata.json
 # Set default wallpaper
 ln -sf xfce /usr/share/backgrounds/gnome
 # Set GNOME Static wallpapers
