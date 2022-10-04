@@ -324,7 +324,7 @@ cd ibus-1.5.27
 ./configure --prefix=/usr --sysconfdir=/etc --enable-gtk4 --enable-wayland --with-python=python3 --disable-emoji-dict --disable-unicode-dict
 rm -f tools/main.c
 make
-make install
+make -j1 install
 install -t /usr/share/licenses/ibus -Dm644 COPYING COPYING.unicode
 gzip -dfv /usr/share/man/man{{1,5}/ibus*.gz,5/00-upstream-settings.5.gz}
 cd ..
