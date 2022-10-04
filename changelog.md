@@ -8,7 +8,6 @@ Changes:
 - [GNOME] Switched to the GTK4 port of the desktop icons GNOME extension.
 - [GNOME] Added Sysprof main GTK4/libadwaita application from MassOS's core system.
 - [GNOME] Switched to the Pano GNOME Clipboard extension.
-- [GNOME] Upgraded JS91 to JS102.
 
 Upgraded software (GNOME):
 
@@ -42,11 +41,9 @@ Upgraded software (GNOME):
 - gnome-firmware: `42.2 --> 43.0`
 - gnome-terminal: `3.44.1 --> 3.46.2`
 - gnome-tour: `42.0 --> 43.0`
-- gjs: `1.73.1 --> 1.74.0`
 - geary: `40.0 --> 43.0`
 - gnome-shell: `42.4 --> 42.5`
-- gnome-desktop: `42.4 --> 42.5`
-- JS: `91.13.0 --> 102.3.0`
+- gnome-desktop: `42.4 --> 43`
 - libadwaita: `1.1.4 --> 1.2.0`
 - libnma-gtk4: `1.8.40 --> 1.10.2`
 - libgweather: `4.0.0 --> 4.2.0`

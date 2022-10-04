@@ -104,34 +104,34 @@ ninja install
 install -t /usr/share/licenses/gtk4 -Dm644 ../COPYING
 cd ../..
 rm -rf gtk-4.8.1
-# JS102.
-tar -xf firefox-102.3.0esr.source.tar.xz
-cd firefox-102.3.0
+# JS91.
+tar -xf firefox-91.13.0esr.source.tar.xz
+cd firefox-91.13.0
 chmod +x js/src/configure.in
-mkdir JS102-build; cd JS102-build
+mkdir JS91-build; cd JS91-build
 ../js/src/configure.in --prefix=/usr --enable-linker=lld --with-intl-api --with-system-zlib --with-system-icu --disable-jemalloc --disable-debug-symbols --enable-readline
 make
 make install
 rm -f /usr/lib/libjs_static.ajs
-sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js102-config
-install -t /usr/share/licenses/js102 -Dm644 ../../extra-package-licenses/js102-license.txt
+sed -i '/@NSPR_CFLAGS@/d' /usr/bin/js91-config
+install -t /usr/share/licenses/js91 -Dm644 ../../extra-package-licenses/js91-license.txt
 cd ../..
-rm -rf firefox-102.3.0
+rm -rf firefox-91.13.0
 # Gjs (Precompiled)
-tar --no-same-owner --same-permissions -xf gjs-1.74.0-x86_64-precompiled-MassOS-2022.09.tar.xz
-cp -a gjs-1.74.0-x86_64-precompiled-MassOS-2022.09/BINARY/* /
+tar --no-same-owner --same-permissions -xf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07-2.tar.xz
+cp -a gjs-1.73.1-x86_64-precompiled-MassOS-2022.07/BINARY/* /
 ldconfig
-rm -rf gjs-1.74.0-x86_64-precompiled-MassOS-2022.09
+rm -rf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07
 # gnome-desktop
-tar -xf gnome-desktop-42.5.tar.xz
-cd gnome-desktop-42.5
+tar -xf gnome-desktop-43.tar.xz
+cd gnome-desktop-43
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddebug_tools=false -Dsystemd=enabled -Dgtk_doc=false -Dinstalled_tests=false -Dbuild_gtk4=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-desktop -Dm644 ../COPYING ../COPYING-DOCS ../COPYING.LIB
 cd ../..
-rm -rf gnome-desktop-42.5
+rm -rf gnome-desktop-43
 # gnome-menus
 tar -xf gnome-menus-3.36.0.tar.xz
 cd gnome-menus-3.36.0
@@ -325,7 +325,7 @@ cd ibus-1.5.27
 ./configure --prefix=/usr --sysconfdir=/etc --enable-gtk4 --enable-wayland --with-python=python3 --disable-emoji-dict --disable-unicode-dict
 rm -f tools/main.c
 make
-make install
+make -j1 install
 install -t /usr/share/licenses/ibus -Dm644 COPYING COPYING.unicode
 gzip -dfv /usr/share/man/man{{1,5}/ibus*.gz,5/00-upstream-settings.5.gz}
 cd ..
