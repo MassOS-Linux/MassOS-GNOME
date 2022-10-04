@@ -281,7 +281,6 @@ rm -rf gnome-bluetooth-42.4
 # gnome-session
 tar -xf gnome-session-43.0.tar.xz
 cd gnome-session-43.0
-sed -i 's|/bin/sh|/bin/sh -l|' gnome-session/gnome-session.in
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddeprecation_flags=false -Dsystemd=true -Dsystemd_session=enable -Dsystemd_journal=true -Ddocbook=false -Dman=true ..
 ninja
