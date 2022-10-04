@@ -123,15 +123,15 @@ cp -a gjs-1.73.1-x86_64-precompiled-MassOS-2022.07/BINARY/* /
 ldconfig
 rm -rf gjs-1.73.1-x86_64-precompiled-MassOS-2022.07
 # gnome-desktop
-tar -xf gnome-desktop-43.tar.xz
-cd gnome-desktop-43
+tar -xf gnome-desktop-42.5.tar.xz
+cd gnome-desktop-42.5
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddebug_tools=false -Dsystemd=enabled -Dgtk_doc=false -Dinstalled_tests=false -Dbuild_gtk4=true ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-desktop -Dm644 ../COPYING ../COPYING-DOCS ../COPYING.LIB
 cd ../..
-rm -rf gnome-desktop-43
+rm -rf gnome-desktop-42.5
 # gnome-menus
 tar -xf gnome-menus-3.36.0.tar.xz
 cd gnome-menus-3.36.0
@@ -621,15 +621,15 @@ cd ../..
 rm -rf libgda-6.0.0
 # Main GNOME apps.
 # Nautilus
-tar -xf nautilus-43.0.tar.xz
-cd nautilus-43.0
+tar -xf nautilus-42.5.tar.xz
+cd nautilus-42.5
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocs=false -Dextensions=true -Dpackagekit=false -Dselinux=false -Dtests=none ..
 ninja
 ninja install
 install -t /usr/share/licenses/nautilus -Dm644 ../LICENSE
 cd ../..
-rm -rf nautilus-43.0
+rm -rf nautilus-42.5
 # Geary
 tar -xf geary-43.0.tar.xz
 cd geary-43.0

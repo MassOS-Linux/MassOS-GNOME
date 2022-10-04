@@ -43,12 +43,12 @@ Upgraded software (GNOME):
 - gnome-tour: `42.0 --> 43.0`
 - geary: `40.0 --> 43.0`
 - gnome-shell: `42.4 --> 42.5`
-- gnome-desktop: `42.4 --> 43`
+- gnome-desktop: `42.4 --> 42.5`
 - libadwaita: `1.1.4 --> 1.2.0`
 - libnma-gtk4: `1.8.40 --> 1.10.2`
 - libgweather: `4.0.0 --> 4.2.0`
 - mutter: `42.4 --> 42.5`
-- nautilus: `42.2 --> 43.0`
+- nautilus: `42.2 --> 42.5`
 - rygel: `0.41.2 --> 0.42.0`
 - tracker: `3.3.3 --> 3.4.0`
 - tracker-miners: `3.3.1 --> 3.4.0`
