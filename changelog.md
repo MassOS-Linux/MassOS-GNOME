@@ -13,6 +13,7 @@ Changes:
 
 Upgraded software (GNOME):
 
+- gnome-shell-extension-appindicator: `42 --> 46`
 - blueprint-compiler: `0.2.0 --> 0.4.0`
 - baobab: `42.0 --> 43.0`
 - cheese: `41.1 --> 43.alpha`
@@ -45,11 +46,12 @@ Upgraded software (GNOME):
 - gnome-text-editor: `42.2 --> 43.0`
 - gnome-characters: `42.0 --> 43.0`
 - gnome-firmware: `42.2 --> 43.0`
-- gnome-terminal: `3.44.1 --> 3.46.1`
+- gnome-terminal: `3.44.1 --> 3.46.2`
 - gdm: `42.0 --> 43.0`
 - gnome-tour: `42.0 --> 43.0`
 - gnome-session: `42.0 --> 43.0`
 - gjs: `1.73.1 --> 1.74.0`
+- geary: `40.0 --> 43.0`
 - JS: `91.13.0 --> 102.3.0`
 - libadwaita: `1.1.4 --> 1.2.0`
 - libnma-gtk4: `1.8.40 --> 1.10.2`

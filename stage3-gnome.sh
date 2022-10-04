@@ -631,17 +631,15 @@ install -t /usr/share/licenses/nautilus -Dm644 ../LICENSE
 cd ../..
 rm -rf nautilus-43.0
 # Geary
-tar -xf geary-40.0.tar.xz
-cd geary-40.0
-patch -Np1 -i ../patches/geary-40.0-upstreamfix.patch
-sed -i 's/-4.0/-4.1/' meson.build
+tar -xf geary-43.0.tar.xz
+cd geary-43.0
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Dprofile=release ..
 ninja
 ninja install
 install -t /usr/share/licenses/geary -Dm644 ../COPYING ../COPYING.icons ../COPYING.pyyaml ../code-of-conduct.md
 cd ../..
-rm -rf geary-40.0
+rm -rf geary-43.0
 # gnome-music
 tar -xf gnome-music-42.1.tar.xz
 cd gnome-music-42.1
@@ -794,15 +792,15 @@ install -t /usr/share/licenses/gnome-system-monitor -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-system-monitor-42.0
 # gnome-terminal
-tar -xf gnome-terminal-3.46.1.tar.bz2
-cd gnome-terminal-3.46.1
+tar -xf gnome-terminal-3.46.2.tar.gz
+cd gnome-terminal-3.46.2
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-terminal -Dm644 ../COPYING ../COPYING.GFDL
 cd ../..
-rm -rf gnome-terminal-3.46.1
+rm -rf gnome-terminal-3.46.2
 # gnome-tweaks
 tar -xf gnome-tweaks-42.beta.tar.xz
 cd gnome-tweaks-42.beta
@@ -914,10 +912,9 @@ rm -rf gnome-tour-43.0
 # Additional GNOME tweaks.
 # Global Extensions
 # gnome-shell-extension-appindicator
-mkdir /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com; unzip appindicatorsupportrgcjonas.gmail.com.v42.shell-extension.zip -d /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+mkdir /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com; unzip appindicatorsupportrgcjonas.gmail.com.v46.shell-extension.zip -d /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
 chmod 644 /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-appindicator -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-appindicator.txt
-sed -e 's|"42"|"43"|' -i /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/metadata.json
 # gnome-shell-extension-desktop-icons-ng-gtk4
 mkdir /usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com; unzip gtk4-dingsmedius.gitlab.com.v7.shell-extension.zip -d /usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com
 chmod 644 /usr/share/gnome-shell/extensions/gtk4-ding@smedius.gitlab.com/metadata.json
