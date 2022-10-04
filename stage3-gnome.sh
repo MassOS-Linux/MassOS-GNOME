@@ -45,16 +45,6 @@ make install
 install -t /usr/share/licenses/gconf -Dm644 COPYING
 cd ..
 rm -rf GConf-3.2.6
-# geocode-glib
-tar -xf geocode-glib-3.26.4.tar.xz
-cd geocode-glib-3.26.4
-mkdir build; cd build
-meson --prefix /usr --buildtype=minsize -Denable-gtk-doc=false -Denable-installed-tests=false -Dsoup2=false ..
-ninja
-ninja install
-install -t /usr/share/licenses/geocode-glib -Dm644 ../COPYING.LIB
-cd ../..
-rm -rf geocode-glib-3.26.4
 # gnome-autoar
 tar -xf gnome-autoar-0.4.3.tar.xz
 cd gnome-autoar-0.4.3
