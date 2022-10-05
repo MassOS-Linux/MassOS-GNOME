@@ -39,7 +39,6 @@ Upgraded software (GNOME):
 - gnome-text-editor: `42.2 --> 43.0`
 - gnome-characters: `42.0 --> 43.0`
 - gnome-firmware: `42.2 --> 43.0`
-- gnome-terminal: `3.44.1 --> 3.46.2`
 - gnome-tour: `42.0 --> 43.0`
 - geary: `40.0 --> 43.0`
 - gnome-shell: `42.4 --> 42.5`

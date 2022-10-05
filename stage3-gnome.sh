@@ -792,15 +792,15 @@ install -t /usr/share/licenses/gnome-system-monitor -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-system-monitor-42.0
 # gnome-terminal
-tar -xf gnome-terminal-3.46.2.tar.gz
-cd gnome-terminal-3.46.2
+tar -xf gnome-terminal-3.44.1.tar.xz
+cd gnome-terminal-3.44.1
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize -Ddocs=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-terminal -Dm644 ../COPYING ../COPYING.GFDL
 cd ../..
-rm -rf gnome-terminal-3.46.2
+rm -rf gnome-terminal-3.44.1
 # gnome-tweaks
 tar -xf gnome-tweaks-42.beta.tar.xz
 cd gnome-tweaks-42.beta
