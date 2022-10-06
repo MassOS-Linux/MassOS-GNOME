@@ -861,15 +861,15 @@ install -t /usr/share/licenses/totem -Dm644 ../COPYING
 cd ../..
 rm -rf totem-43.0
 # gnome-text-editor
-tar -xf gnome-text-editor-43.0.tar.xz
-cd gnome-text-editor-43.0
+tar -xf gnome-text-editor-43.1.tar.xz
+cd gnome-text-editor-43.1
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-text-editor -Dm644 ../COPYING
 cd ../..
-rm -rf gnome-text-editor-43.0
+rm -rf gnome-text-editor-43.1
 # gnome-characters
 tar -xf gnome-characters-43.0.tar.xz
 cd gnome-characters-43.0

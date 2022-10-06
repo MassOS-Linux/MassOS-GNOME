@@ -43,7 +43,7 @@ Upgraded software (GNOME):
 - gnome-maps: `42.3 --> 43.0`
 - gnome-weather: `42.0 --> 43.0`
 - gnome-software: `42.4 --> 43.0`
-- gnome-text-editor: `42.2 --> 43.0`
+- gnome-text-editor: `42.2 --> 43.1`
 - gnome-characters: `42.0 --> 43.0`
 - gnome-firmware: `42.2 --> 43.0`
 - gnome-terminal: `3.44.1 --> 3.46.2`
