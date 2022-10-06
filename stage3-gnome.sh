@@ -485,7 +485,7 @@ rm -rf telepathy-mission-control-5.16.6
 tar -xf gnome-shell-42.5.tar.xz
 cd gnome-shell-42.5
 mkdir build; cd build
-meson --prefix=/usr --buildtype=minsize -Dextensions_tool=true -Dextensions_app=false -Dgtk_doc=false -Dman=true -Dtests=false -Dnetworkmanager=true -Dsystemd=true ..
+meson --prefix=/usr --buildtype=minsize -Dextensions_tool=true -Dextensions_app=false -Dgtk_doc=false -Dman=true -Dtests=false -Dnetworkmanager=true -Dsystemd=true -Dsoup2=false ..
 ninja
 ninja install
 install -t /usr/share/licenses/gnome-shell -Dm644 ../COPYING
