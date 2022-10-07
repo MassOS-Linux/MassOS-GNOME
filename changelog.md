@@ -4,6 +4,15 @@ This document contains the changes for each release of the GNOME port. It will b
 # Current Development
 Changes:
 
+- [GNOME] Development has only just begun, check back soon!
+
+Upgraded software (GNOME):
+
+- Development has only just begun, check back soon!
+
+# MassOS 2022.10
+Changes:
+
 - [GNOME] Reimplemented the default pinned apps.
 - [GNOME] Switched to the GTK4 port of the desktop icons GNOME extension.
 - [GNOME] Upgraded to GNOME 43.
