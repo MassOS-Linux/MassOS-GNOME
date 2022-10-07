@@ -922,6 +922,7 @@ install -t /usr/share/licenses/gnome-shell-extension-desktop-icons-ng-gtk4 -Dm64
 mkdir /usr/share/gnome-shell/extensions/pano@elhan.io; unzip panoelhan.io.v10.shell-extension.zip -d /usr/share/gnome-shell/extensions/pano@elhan.io
 chmod 644 /usr/share/gnome-shell/extensions/pano@elhan.io/metadata.json
 install -t /usr/share/licenses/gnome-shell-extension-pano -Dm644 extra-package-licenses/LICENSE-gnome-shell-extension-pano.txt
+sed -e '41 s|<default>true</default>|<default>false</default>|' -i /usr/share/gnome-shell/extensions/pano@elhan.io/schemas/org.gnome.shell.extensions.pano.gschema.xml
 # gnome-shell-extension-alphabetical-grid-extension
 mkdir /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst; unzip AlphabeticalAppGridstuarthayhurst.v26.shell-extension.zip -d /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst
 chmod 644 /usr/share/gnome-shell/extensions/AlphabeticalAppGrid@stuarthayhurst/metadata.json
