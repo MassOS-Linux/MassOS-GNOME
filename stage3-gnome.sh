@@ -603,7 +603,7 @@ tar -xf editorconfig-core-c-0.12.5.tar.gz
 cd editorconfig-core-c-0.12.5
 mkdir build; cd build
 cmake -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_DOCUMENTATION=OFF -Wno-dev -G Ninja ..
-ninja 
+ninja
 ninja install
 install -t /usr/share/licenses/editorconfig-core-c -Dm644 ../LICENSE
 cd ../..
@@ -659,10 +659,10 @@ ninja install
 install -t /usr/share/licenses/gnome-calendar -Dm644 ../COPYING
 cd ../..
 rm -rf gnome-calendar-43.0
-# gnome-extension-manager
-tar -xf gnome-extension-manager-0.3.2.tar.gz
+# extension-manager
+tar -xf extension-manager-0.3.2.tar.gz
 cd extension-manager-0.3.2
-patch -Np1 -i ../patches/gnome-extension-manager-3.2-gtk-4.8-fixes.patch
+patch -Np1 -i ../patches/extension-manager-3.2-gtk-4.8-fixes.patch
 mkdir build; cd build
 meson --prefix=/usr --buildtype=minsize ..
 ninja
@@ -986,7 +986,7 @@ monospace-font-name='Noto Sans Mono Regular 11'
 icon-theme='Adwaita'
 gtk-theme='Adwaita-dark'
 clock-show-weekday=true
-show-battery-percentage=true 
+show-battery-percentage=true
 
 [org.gnome.desktop.wm.preferences]
 button-layout='appmenu:minimize,maximize,close'
@@ -1016,7 +1016,7 @@ picture-uri='file:///usr/share/gdm/gdm-background.png'
 default-zoom-level='standard'
 
 [org.gnome.nautilus.preferences]
-show-delete-permanently=true 
+show-delete-permanently=true
 
 [org.gnome.login-screen]
 logo='/usr/share/massos/massos-logo-sidetext.png'
