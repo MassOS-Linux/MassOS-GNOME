@@ -559,16 +559,6 @@ make install
 install -t /usr/share/licenses/gmime -Dm644 COPYING
 cd ..
 rm -rf gmime-3.2.7
-# ytnef
-tar -xf ytnef-2.0.tar.gz
-cd ytnef-2.0
-./autogen.sh
-./configure --prefix=/usr --disable-static
-make
-make install
-install -t /usr/share/licenses/ytnef -Dm644 COPYING
-cd ..
-rm -rf ytnef-2.0
 # gtksourceview5
 tar -xf gtksourceview-5.6.0.tar.xz
 cd gtksourceview-5.6.0
